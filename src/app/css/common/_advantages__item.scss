@@ -1,0 +1,52 @@
+.advantages__item {
+	width: 425px;
+	padding: 54px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	background-color: $color-primary-black;
+
+	@media (max-width: 500px) {
+		width: 375px;
+		padding: 20px;
+	}
+
+	@media (max-width: 370px) {
+		display: block;
+		width: 275px;
+		padding: 20px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		width: 506px;
+
+		padding: clamp(1.875rem, -7.547rem + 12.55vw, 3.75rem);
+		row-gap: clamp(1.25rem, 1.009rem + 0.99vw, 1.875rem);
+	}
+
+	img{
+		display: flex;
+		margin: 0 auto;
+		width: 76px;
+		height: 76px;
+		color: $color-primary-yellow;
+
+		@include media-breakpoint-up(lg) {
+			width: 120px;
+			height: 120px;
+		}
+	}
+
+
+
+	h3 {
+		text-align: center;
+		color: var(--color-white);
+	}
+
+	p {
+		padding-top: 10px;
+		text-align: center;
+	}
+}

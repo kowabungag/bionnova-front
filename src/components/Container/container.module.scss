@@ -1,0 +1,31 @@
+.container{
+  position: relative;
+  z-index: 1;
+  max-width: 1590px;
+  margin: 0 auto;
+}
+
+.sizeFull{
+  min-height: 100vh; /* Это важно: делает высоту body равной высоте видимого окна браузера */
+}
+
+.sizeZero{
+  min-height: auto !important; /* Это важно: делает высоту body равной высоте видимого окна браузера */
+}
+
+.wrapper{
+  padding: 150px 15px 0 15px;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  @media screen and (max-width: 768px){
+    padding: 50px 15px 0 15px;
+  }
+}
+
+.additionalPadding{
+  @media screen and (max-width: 768px){
+    padding: 80px 15px 0 15px;
+  }
+}

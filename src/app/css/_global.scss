@@ -1,0 +1,23 @@
+.text60{
+  color: var(--color-white);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 110%;
+  @media screen and (max-width: 1200px) {
+
+      max-width: 300px;
+      font-size: 44px!important;
+
+  }
+  @media screen and (max-width: 768px) {
+
+
+      font-size: 40px!important;
+
+  }
+  @media screen and (max-width: 450px) {
+
+      font-size: 36px!important;
+
+  }
+}

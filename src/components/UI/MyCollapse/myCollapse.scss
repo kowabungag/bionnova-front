@@ -1,0 +1,341 @@
+.collapse {
+
+  .ant-collapse {
+    font-family: Inter, serif;
+    border: none !important;
+  }
+
+  .ant-collapse-header {
+    background: var(--color-deep-black);
+    border: none !important;
+    border-radius: 0 !important;
+    align-items: center !important;
+    padding: 63px 53px 59px 40px !important;
+
+    span {
+      font-size: 32px;
+      color: #fff;
+    }
+  }
+
+  .ant-collapse-item {
+    padding-top: 20px;
+
+    border: none !important;
+  }
+
+  .ant-collapse-content {
+    border: none !important;
+
+  }
+
+  .ant-collapse-content-box {
+    background: var(--color-deep-black);
+    border: none;
+    padding: 16px 53px 16px 40px !important;
+  }
+
+  .ant-collapse-expand-icon {
+    order: 1;
+  }
+
+  .anticon {
+    svg {
+      fill: var(--color-golden-yellow);
+      transform: rotate(90deg);
+      width: 24px;
+      height: 24px;
+    }
+
+  }
+
+  .ant-collapse-item-active {
+    .anticon {
+      svg {
+        transform: rotate(-90deg)!important;
+      }
+    }
+  }
+
+  .collapse_content {
+    span {
+      color: var(--color-white);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      text-transform: none !important;
+    }
+
+    //p {
+    //  color: var(--color-white);
+    //  font-size: 24px;
+    //  font-style: normal;
+    //  font-weight: 200;
+    //  line-height: 130%;
+    //}
+    .levelTitle {
+      font-size: 32px;
+      line-height: 130%;
+      text-transform: uppercase;
+    }
+
+    .levelBody {
+      font-size: 24px;
+      font-weight: 100;
+
+      ul {
+        list-style: disc;
+
+        li {
+          list-style: disc;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .ant-collapse-header {
+      padding: 40px 35px !important;
+
+      span {
+        font-size: 28px;
+      }
+    }
+
+    .ant-collapse-content-box {
+      padding: 16px 40px 16px 35px !important;
+    }
+
+    span {
+      font-size: 20px !important;
+    }
+    .collapse_content {
+      p {
+        color: var(--color-white);
+        font-size: 20px !important;
+      }
+
+      .levelTitle {
+        font-size: 18px !important;
+      }
+
+      .levelBody {
+        font-size: 24px;
+        font-weight: 100 !important;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .ant-collapse-header {
+      padding: 32px 20px !important;
+
+      span {
+        font-size: 24px;
+      }
+    }
+
+    .ant-collapse-content-box {
+      padding: 16px 20px 16px 20px !important;
+    }
+    .anticon {
+      position: relative !important;
+      top: 7px !important;
+      left: 7px !important;
+    }
+    .ant-collapse-expand-icon {
+      align-self: self-start;
+
+    }
+    .ant-collapse-header {
+      span {
+        font-size: 22px;
+      }
+    }
+    span {
+      font-size: 18px !important;
+    }
+
+    p {
+      color: var(--color-white);
+      font-size: 18px !important;
+    }
+
+    .collapse_content {
+      .levelTitle {
+        font-size: 18px;
+        line-height: 130%;
+        text-transform: uppercase;
+      }
+
+      .levelBody {
+        font-size: 18px;
+        font-weight: 100;
+      }
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .anticon {
+      position: relative !important;
+      top: 0px !important;
+      left: 10px !important;
+    }
+    .ant-collapse-header {
+      padding: 27px 17px 27px 14px !important;
+
+      span {
+        font-size: 18px;
+      }
+    }
+    .ant-collapse-content-box {
+      padding: 14px !important;
+    }
+    span {
+      font-size: 14px !important;
+    }
+
+    p {
+      color: var(--color-white);
+      font-size: 14px !important;
+    }
+  }
+}
+
+
+// program
+.collapse-programs, .collapse-webinars {
+  .ant-collapse-header {
+    background: var(--color-deep-black);
+    border: none !important;
+    border-radius: 0 !important;
+    align-items: center !important;
+    padding: 22px 37px 37px 30px !important;
+
+    .ant-collapse-expand-icon {
+      position: absolute;
+      bottom: 42px;
+      right: 24px;
+    }
+
+    .anticon {
+      svg {
+        fill: var(--color-golden-yellow);
+        transform: rotate(-90deg);
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__type {
+        color: rgba(241, 240, 231, 0.40);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%; /* 31.2px */
+        text-transform: capitalize;
+      }
+
+      &__price {
+        color: #F5B335;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 41.6px */
+        text-transform: uppercase;
+      }
+    }
+
+    .header-bottom {
+      padding-top: 21px;
+
+      &__name {
+        color: #F1F0E7;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%; /* 41.6px */
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .ant-collapse-content-box {
+    padding: 0 !important;
+  }
+
+  .collapse_content {
+    //margin-top: 50px;
+    padding: 29px;
+  }
+
+  .collapse_description {
+    padding-top: 60px;
+
+    p {
+      position: relative;
+      margin-top: 24px;
+      padding-left: 36px;
+      color: #F1F0E7;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 130%; /* 31.2px */
+      text-transform: capitalize;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &:before {
+        position: absolute;
+        left: 0px;
+        display: inline-block;
+
+      }
+    }
+
+    span {
+      color: #F1F0E7;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .date {
+      &:before {
+        content: url('../../../app/media/images/calendar.svg');
+      }
+    }
+
+    .teacher {
+      &:before {
+        content: url('../../../app/media/images/user.svg');
+      }
+    }
+
+    .duration {
+      &:before {
+        content: url('../../../app/media/images/clock.svg');
+      }
+    }
+
+    .exactTime {
+      &:before {
+        content: url('../../../app/media/images/clock.svg');
+      }
+    }
+  }
+}
+
+// level
+
+
+//webinars
+

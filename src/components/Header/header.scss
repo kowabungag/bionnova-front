@@ -1,0 +1,80 @@
+.ant-select{
+  width: 75px!important;
+  span{
+    font-size: 20px;
+    color: var(--color-white);
+    text-transform: uppercase !important;
+  }
+  @media screen and (max-width: 991px){
+    display: none;
+  }
+}
+.ant-select-selector{
+  position: relative;
+  background: none!important;
+  border: none!important;
+  width: 55px;
+  &::after{
+    content: ''!important;
+    position: absolute!important;
+    top: 0!important;
+    right: 0!important;
+    width: 24px!important;
+    height: 24px;
+    display: inline-block!important;
+    background-image: url("../../app/media/images/icon/icon9.svg")!important;
+  }
+}
+
+.ant-select-arrow{
+  svg{
+    fill:var(--color-golden-yellow)!important;
+  }
+}
+
+.ant-select-open{
+  span{
+    color: var(--color-white)!important;
+    text-transform: uppercase;
+  }
+}
+
+.rc-virtual-list-holder-inner{
+  text-transform: uppercase!important;
+}
+
+//.ant-select-arrow{
+//  display: none!important;
+//}
+
+.liWithImg {
+  padding-left: 36px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+}
+
+header{
+  @media screen and (max-width:991px){
+    padding: 25px 0!important;
+  }
+}
+
+.basket {
+  &:before {
+    content: url("../../app/media/images/basket.svg");
+  }
+}
+
+.account {
+  &:before {
+    content: url("../../app/media/images/userGolden.svg");
+  }
+}
+
+
+

@@ -1,0 +1,148 @@
+
+.PhoneInputCountry{
+  display: none;
+}
+.contactForm{
+  .form {
+    font-family: Inter, serif;
+    max-width: 505px;
+
+    .formContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 32px;
+    }
+
+    input {
+      height: 74px;
+      padding: 9px 22px;
+      width: 100%;
+      color: #fff;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border: 1px solid #F1F0E7;
+      backdrop-filter: blur(3px);
+      background-color: #151515;
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 45px #151515 inset !important;
+        -webkit-text-fill-color: #fff;
+      }
+      //&::placeholder {
+      //  color: rgba(241, 240, 231, 0.40);
+      //}
+      //&:focus{
+      //  border: 2px solid #F5B335;
+      //}
+    }
+
+    button {
+      margin-top: 64px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 48px;
+      input{
+        height: 65px;
+        padding: 7px 18px;
+        font-size: 20px;
+      }
+      button{
+        font-size: 26px;
+      }
+    }
+    @media screen and (max-width: 768px){
+      padding-top: 36px;
+      .formContainer {
+        row-gap: 24px;
+      }
+      button{
+        margin: 24px 0 0 0;
+        height: 60px;
+        font-size: 20px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      padding-top: 24px;
+      .formContainer {
+        row-gap: 16px;
+      }
+
+      input{
+        padding: 7px;
+        height: 60px;
+        font-size: 18px;
+      }
+    }
+  }
+
+
+
+  .form_individual{
+    input {
+      color:var(--color-soft-black);
+      border: 1px solid var(--color-soft-black);
+      &::placeholder {
+        color: rgba(32, 32, 32, 0.40);
+      }
+    }
+    @media screen and (max-width: 768px){
+      margin: 0 auto;
+    }
+  }
+  .form_white{
+    input {
+      color: rgba(32, 32, 32, 0.40);
+      border: 1px solid #202020;
+      backdrop-filter: blur(3px);
+      background-color: #F1F0E7;
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 45px #F1F0E7 inset !important;
+        -webkit-text-fill-color: red;
+      }
+    }
+  }
+
+  .form_basket{
+    margin: 0 auto;
+    .basket-btns{
+      display: flex;
+      column-gap: 40px;
+    }
+    .basket-remove{
+      display: none;
+    }
+    .price{
+      text-align: center;
+      padding-top: 81px;
+      color: #F5B335;
+      font-size: 36px;
+      font-weight: 400;
+    }
+    @media screen and (max-width: 768px){
+      .price{
+        font-size: 30px;
+      }
+    }
+    @media screen and (max-width: 450px){
+      .basket-btns{
+        flex-direction: column-reverse;
+      }
+      .price{
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.error{
+  color: red;
+}

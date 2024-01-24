@@ -1,0 +1,51 @@
+.root{
+  margin: 0 5px 0 23px;
+  .row{
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 32px;
+
+  }
+
+  .rowSoon{
+    padding-top: 48px;
+  }
+
+  .title{
+    color: #F5B335;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 130%; /* 41.6px */
+    text-transform: uppercase;
+  }
+
+  .titleAvailable{
+    padding-top: 31px;
+  }
+  .titleSoon{
+    padding-top: 31px;
+  }
+  @media screen and (max-width: 1024px){
+    .row{
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 768px){
+    margin: 0;
+    .row{
+      padding-top: 25px;
+      align-self: center;
+    }
+    .title{
+      font-size: 24px;
+    }
+    .titleAvailable{
+      padding-top: 31px;
+    }
+    .titleSoon{
+      padding-top: 31px;
+    }
+  }
+}

@@ -1,0 +1,864 @@
+@import "public/css/base/mixins/breakpoints";
+@import "public/css/base/variables";
+
+
+// ---
+// Our Goal
+.our-goal {
+  position: relative;
+  margin-top: 21px;
+  padding-top: 288px;
+
+  width: 100%;
+  height: 788px;
+
+  background: center / cover no-repeat url("../../app/media/images/about/about-bg-top-mobile.png");
+
+  @include media-breakpoint-up(sm) {
+    background: url("../../app/media/images/about/about-bg-top.png");
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 871px;
+    padding-top: 0;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    margin-top: 200px;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.our-goal-block {
+  width: 100%;
+  max-width: 1296px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 355px;
+    row-gap: 30px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  @include media-breakpoint-up(xxl) {
+    max-width: none;
+    margin-left: auto;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .main-title {
+    width: 95%;
+    text-align: left;
+
+    @include media-breakpoint-up(sm) {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: grid;
+      grid-row-start: 1;
+      grid-column-start: 4;
+      grid-column-end: 11;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      max-width: none;
+      display: grid;
+      grid-row-start: 1;
+      grid-column-start: 6;
+      grid-column-end: 13;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 650px;
+
+    align-self: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.2;
+
+
+    @include media-breakpoint-up(lg) {
+      max-width: 575px;
+      align-self: flex-start;
+    }
+
+    @include media-breakpoint-up(xl) {
+      display: grid;
+      grid-row-start: 2;
+      grid-column-start: 4;
+      grid-column-end: 10;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      max-width: 650px;
+      display: grid;
+      grid-row-start: 2;
+      grid-column-start: 6;
+      grid-column-end: 11;
+    }
+
+    p {
+      margin-bottom: 16px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 30px;
+        font-size: clamp(1.625rem, 0.957rem + 1.08vw, 2.25rem);
+      }
+    }
+
+    & p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ---
+// Marquee & Description
+.description-block {
+  width: 100%;
+  height: 624px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media-breakpoint-up(md) {
+    height: 345px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 474px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 544px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    height: clamp(34rem, 22.053rem + 13.65vw, 38.438rem);
+  }
+
+  &__marquee {
+    width: 100%;
+    margin-bottom: 80px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 158px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: $ui-index-1;
+
+    picture {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: clamp(25rem, 8.037rem + 47.12vw, 30.625rem);
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: auto;
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      picture {
+        width: 50%;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      picture {
+        width: 55%;
+      }
+    }
+
+    @include media-breakpoint-up(xxl) {
+      picture {
+        width: 58.5%;
+      }
+    }
+  }
+
+  &__description {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-deep-black);
+
+    @include media-breakpoint-up(md) {
+      padding: 22px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 45%;
+      padding: 30px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: 41.5%;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      padding-left: clamp(2.188rem, -5.625rem + 8.93vw, 3.75rem);
+      padding-right: clamp(2.188rem, -5.625rem + 8.93vw, 3.75rem);
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--color-yellow);
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: clamp(2.75rem, 2.082rem + 1.08vw, 3.375rem);
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    font-size: 22px;
+    @media screen and (max-width: 900px) {
+      font-size: 18px;
+    }
+  }
+}
+
+// ---
+// Main Areas
+.main-areas {
+  position: relative;
+  width: 100%;
+  padding-top: 216px;
+  padding-bottom: 84px;
+
+  background-color: var(--color-white);
+
+  @include media-breakpoint-up(sm) {
+    padding-top: 240px;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 280px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: 320px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-top: clamp(21.25rem, 2.5rem + 21.43vw, 25rem);
+    padding-bottom: 138px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: radial-gradient(77% 50% at 0% 79%, rgba(255, 230, 114, 0.5) 1%, rgba(255, 230, 114, 0) 99%);
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    left: 0;
+
+    @include media-breakpoint-up(sm) {
+      top: 48%;
+    }
+
+    @include media-breakpoint-up(md) {
+      top: 46%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: 41%;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      top: 35%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include media-breakpoint-up(lg) {
+        height: auto;
+      }
+    }
+  }
+
+  &__items {
+    position: relative;
+    margin-bottom: 80px;
+    z-index: $ui-index-1;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      margin-bottom: 300px;
+    }
+    @media screen and (max-width: 450px) {
+      padding-top: 40px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 16px;
+    line-height: 1.125;
+    color: var(--color-soft-black);
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 45%;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: 42%;
+    }
+    @media screen and (max-width: 991px) {
+      padding-top: 60px;
+    }
+    @media screen and (max-width: 450px) {
+      padding-top: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    max-width: 890px;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    a {
+      color: #000;
+    }
+
+    li {
+      border-radius: 30px;
+      padding: 15px 18px;
+      white-space: nowrap;
+      border: 2px solid #000;
+    }
+
+    @media screen and (max-width: 450px) {
+      gap: 8px;
+      flex-direction: column;
+    }
+    //@include media-breakpoint-up(lg) {
+    //  width: 100%;
+    //}
+    //
+    //@include media-breakpoint-up(xl) {
+    //  width: 55%;
+    //  flex-direction: row;
+    //  flex-wrap: wrap;
+    //  gap: 20px;
+    //}
+    //
+    //@include media-breakpoint-up(xxl) {
+    //  width: 58%;
+    //  gap: 20px;
+    //}
+  }
+
+  &__mission {
+    position: relative;
+    z-index: $ui-index-1;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+    }
+
+    img {
+      display: none;
+
+      @include media-breakpoint-up(xl) {
+        width: 45%;
+        display: block;
+        height: 80px;
+
+      }
+
+      @include media-breakpoint-up(xxl) {
+        width: 42%;
+        display: block;
+        height: 120px;
+      }
+    }
+
+    &--items {
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include media-breakpoint-up(xl) {
+        width: 55%;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        width: 58%;
+      }
+
+      h2{
+        white-space: nowrap;
+      }
+
+      p {
+        font-size: 24px;
+        margin-bottom: 48px;
+        color: var(--color-soft-black);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 36px;
+        }
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+// ---
+// Medical Affairs
+.medical-affairs {
+  padding: 80px 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-top: clamp(12.5rem, -3.125rem + 20.83vw, 18.75rem);
+    padding-bottom: clamp(12.5rem, -3.125rem + 20.83vw, 18.75rem);
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    color: var(--color-white);
+
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+      font-size: 2.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 45%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 42%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include media-breakpoint-up(lg) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 55%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 58%;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      padding-bottom: 24px;
+      font-size: 18px;
+      gap: 14px;
+      border-bottom: $border-gold;
+      color: var(--color-white);
+
+      img {
+        width: 30px;
+        height: 30px;
+        color: var(--color-yellow);
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 24px;
+
+        img {
+          height: 30px;
+          width: 30px;
+          color: var(--color-yellow);
+        }
+      }
+    }
+  }
+}
+
+// ---
+// Services Block
+.services {
+  position: relative;
+  width: 100%;
+  padding-top: 230px;
+  padding-bottom: 80px;
+
+  border-bottom: $border-gold;
+
+  background-image: url('../../app/media/images/about/about-bg-bottom-mobile.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  color: var(--color-white);
+
+  @include media-breakpoint-up(xs) {
+    padding-top: clamp(14.375rem, -0.625rem + 61.54vw, 28.875rem);
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 80px;
+    background-size: cover;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-top: 145px;
+    padding-bottom: 145px;
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 44%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(310deg, #202020 7.79%, rgba(32, 32, 32, 0) 67.6%);
+    z-index: $ui-index-1;
+
+    @include media-breakpoint-up(md) {
+      height: 100%;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+
+    z-index: $ui-index-2;
+
+    @include media-breakpoint-up(md) {
+      gap: 30px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      gap: 70px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      gap: clamp(4.375rem, -5rem + 10.71vw, 6.25rem);
+    }
+  }
+
+  &__title {
+    @include media-breakpoint-up(md) {
+      width: 555px;
+    }
+  }
+
+  &__title {
+    @include media-breakpoint-up(xl) {
+      width: 930px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+
+    a {
+      margin: 0 auto 0 0;
+      color: #F1F0E7;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 75%;
+      align-self: flex-end;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 64.5%;
+      gap: clamp(1.688rem, 0.18rem + 2.01vw, 1.938rem);
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: clamp(50.313rem, 16.771rem + 38.33vw, 57.5rem);
+      row-gap: 48px;
+      column-gap: clamp(4.25rem, -2.167rem + 7.33vw, 5.625rem);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 48%;
+      gap: clamp(0.5rem, -2.083rem + 5.38vw, 1.25rem);
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: 45%;
+    }
+  }
+}
+
+// ---
+// Description Block
+.description {
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: clamp(6.25rem, -11.773rem + 29.07vw, 18.75rem);
+    padding-bottom: clamp(6.25rem, -11.773rem + 29.07vw, 18.75rem);
+  }
+
+  @include media-breakpoint-up(xxl) {
+    padding-top: clamp(18.75rem, -6.25rem + 28.57vw, 23.75rem);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    @include media-breakpoint-up(xxl) {
+      gap: 50px;
+    }
+  }
+
+  &__container {
+    &::-webkit-scrollbar {
+      flex-shrink: 0;
+      width: 34px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-clip: padding-box;
+      border-radius: 9999px;
+      background-color: rgba(217, 217, 217, 0.30);
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+      margin: 50px 0 0 0;
+    }
+
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+    overflow-x: scroll;
+
+    @include media-breakpoint-up(xxl) {
+      overflow: initial;
+    }
+  }
+
+  &__items {
+    width: auto;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+
+    @include media-breakpoint-up(xl) {
+      gap: 35px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      gap: clamp(2.188rem, -5.625rem + 8.93vw, 3.75rem);
+    }
+  }
+
+  &__item {
+    width: 270px;
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    background-color: var(--color-deep-black);
+    @media screen and (max-width: 900px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-up(md) {
+      width: 330px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: clamp(20.625rem, 9.657rem + 17.69vw, 25.125rem);
+      padding: 25px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: clamp(25rem, 28.57vw, 30rem);
+      padding: 40px;
+
+      &:nth-child(2) {
+        position: relative;
+        top: -80px;
+      }
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      color: var(--color-golden-yellow);
+      opacity: 0.25;
+
+      @include media-breakpoint-up(lg) {
+        width: 100px;
+        height: 100px;
+      }
+
+      @include media-breakpoint-up(xxl) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    p {
+      padding-bottom: 20px;
+      flex: 1;
+      border-bottom: $border-gold;
+    }
+  }
+}

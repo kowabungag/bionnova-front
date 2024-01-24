@@ -1,0 +1,399 @@
+// WebinarOverview
+
+.rootOverview {
+  padding-top: 15px;
+  .back {
+    margin: 0 0 0 37px;
+    @media screen and (max-width: 1200px) {
+      margin: 0;
+    }
+    @media screen and (max-width: 1200px) {
+      margin: -20px 0 0 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-top: 70px;
+  }
+
+  .overviewRow {
+    padding-top: 37px;
+    display: grid;
+    grid-template-areas:
+    "img description participants"
+    "img button participants";
+    @media screen and (max-width: 1500px) {
+      column-gap: 70px;
+      grid-template-areas:
+      "img description"
+      "img participants"
+      ". button ";
+    }
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
+      grid-template-areas:
+      "img description"
+      "img participants"
+      ". button ";
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      column-gap: 40px;
+      grid-template-areas:
+      "description"
+      "img"
+      "participants"
+      "button ";
+    }
+  }
+
+  grid-template-columns:4fr 3fr 2fr;
+
+
+  .image {
+    grid-area: img;
+    max-width: 580px;
+    max-height: 630px;
+    justify-self: flex-end;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 40px;
+      justify-self: center;
+    }
+  }
+
+  .description {
+    margin-left: 70px;
+    grid-area: description;
+
+    span {
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: none !important;
+    }
+
+
+    .title {
+      margin: 0 0 0 -20px;
+      font-size: 24px;
+      font-weight: 300;
+      color: rgba(241, 240, 231, 0.40);
+    }
+
+    .date, .teacher, .program, .format, .exactTime, .level {
+      font-size: 24px;
+      color: var(--color-white);
+
+      margin: 25px 0 0 0;
+      padding: 0 0 0 20px;
+      position: relative;
+      max-width: 425px;
+
+      &:before {
+        position: absolute;
+        top: 5px;
+        left: -20px;
+      }
+    }
+
+    .name {
+      font-size: 60px;
+      margin: 0 0 0 -20px;
+      padding: 16px 0 40px;
+      font-weight: 600;
+      line-height: 110%; /* 66px */
+      max-width: 520px;
+    }
+
+    .date {
+      padding: 0 0 0 20px;
+      margin: 0;
+      font-weight: 300;
+
+      &:before {
+        content: url("../../../app/media/images/calendar.svg");
+      }
+    }
+
+    .teacher {
+      font-weight: 300;
+      max-width: 310px;
+
+      &:before {
+        content: url("../../../app/media/images/user.svg");
+      }
+    }
+
+    .program {
+      &:before {
+        content: url("../../../app/media/images/book.svg");
+      }
+    }
+
+    .format {
+      &:before {
+        content: url("../../../app/media/images/clock.svg");
+      }
+    }
+
+    .exactTime {
+      &:before {
+        content: url("../../../app/media/images/clock.svg");
+      }
+    }
+
+    .level{
+      padding: 0 0 0 20px;
+      &:before {
+        content: url("../../../app/media/images/star.svg");
+      }
+    }
+
+    @media screen and (max-width: 1500px) {
+      margin: 0;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .title {
+        font-size: 22px;
+      }
+      .name {
+        padding: 16px 0 0;
+      }
+      span {
+        font-size: 22px;
+      }
+      .date, .teacher, .program, .format, .exactTime {
+        margin: 25px 0 0 0;
+        padding: 0 0 0 20px;
+        font-size: 22px;
+      }
+      .level{
+        font-size: 22px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .title {
+        font-size: 20px;
+        margin: 0;
+      }
+      .name {
+        margin: 0;
+      }
+
+      span {
+        font-size: 20px;
+      }
+      .date, .teacher, .program, .format, .exactTime ,.level{
+        margin: 16px 0 0 20px;
+        padding: 0 0 0 20px;
+        font-size: 20px;
+
+        &:before {
+          top: 2px;
+        }
+      }
+    }
+    @media screen and (max-width: 450px) {
+
+      span {
+        font-size: 20px;
+      }
+      .date, .teacher, .program, .format, .exactTime {
+        margin: 16px 0 0 20px;
+        padding: 0 0 0 20px;
+        font-size: 18px;
+
+        &:before {
+          top: 2px;
+        }
+      }
+    }
+  }
+
+  .btnBlock {
+    max-width: 380px;
+    grid-area: button;
+    white-space: nowrap;
+    margin: 50px 0 0 55px;
+    @media screen and (max-width: 1500px) {
+      margin: 50px 0 0 0;
+    }
+    @media screen and (max-width: 1500px) {
+      margin: 40px 0 0;
+      max-width: 370px;
+      button {
+        font-size: 26px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      justify-self: center;
+      button {
+        height: 60px;
+        font-size: 22px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      max-width: 450px;
+      width: 100%;
+      button {
+        padding: 30px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .participants {
+    position: relative;
+    left: -70px;
+    top: 15px;
+    align-self: center;
+    max-width: 427px;
+    max-height: 235px;
+    grid-area: participants;
+    display: grid;
+    grid-template-areas:
+    "l1 r1"
+    "l2 r2"
+    "l3 r3";
+    grid-template-columns: 5fr 3fr;
+
+    p {
+      border: 1px solid var(--color-white);
+      white-space: nowrap;
+      padding: 24px;
+    }
+
+    .l1 {
+      grid-area: l1;
+    }
+
+    .l2 {
+      grid-area: l2;
+    }
+
+    .l3 {
+      grid-area: l3;
+    }
+
+    .r1 {
+      grid-area: r1;
+    }
+
+    .r2 {
+      grid-area: r2;
+    }
+
+    .r3 {
+      grid-area: r3;
+    }
+
+    @media screen and (max-width: 1500px) {
+      max-width: 370px;
+      margin-top: 40px;
+      position: unset;
+    }
+    @media screen and (max-width: 1200px) {
+      p {
+        font-size: 22px;
+        border: 1px solid var(--color-white);
+        white-space: nowrap;
+        padding: 18px;
+      }
+
+    }
+    @media screen and (max-width: 768px) {
+      justify-self: center;
+    }
+    @media screen and (max-width: 450px) {
+      max-width: 450px;
+      width: 100%;
+      p {
+        padding: 18px 10px;
+        height: 60px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+.descriptionBlock {
+  padding: 180px 0 210px;
+  background-image: url("../../../app/media/images/webinarBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -120px 275px;
+
+  .descriptionContainer {
+    max-width: 1590px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .rowProgram{
+    padding-top: 120px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 640px 1fr;
+    column-gap: 30px;
+    grid-template-areas: "text content";
+  }
+
+  .title {
+    padding: 0 0 0 40px;
+    grid-area: text;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .contentTitle {
+    color: #D9D9D9;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 26px */
+  }
+
+  .contentProgram {
+    margin-top: 65px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .row {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 1200px){
+    background-position: -435px 404px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 64px 0 160px;
+    background-image: url("../../../app/media/images/webinarBgMedium.png");
+    background-position: 0 105%;
+    background-size: contain;
+    .title {
+      padding: 0;
+    }
+    .row {
+      grid-template-areas: "text""content";
+      grid-template-columns: 1fr;
+    }
+    .rowProgram {
+      padding-top: 65px;
+    }
+    .content {
+      margin-top: 24px;
+    }
+  }
+  @media screen and (max-width: 450px){
+    background-image: url("../../../app/media/images/webinarBgSmall.png");
+  }
+}

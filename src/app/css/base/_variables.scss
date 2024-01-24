@@ -1,0 +1,77 @@
+$font-family-inter: 'Inter', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+
+$font-primary: $font-family-inter;
+
+$breakpoints: (
+				xs: 376px,
+				sm: 576px,
+				md: 768px,
+				lg: 992px,
+				xl: 1200px,
+				xxl: 1400px
+);
+
+// ---
+// Colors.
+// Available via `var(--color-{COLOR_NAME})`.
+
+$color-white: #f1f0e7;
+$color-white-80: rgba(255, 255, 255, 0.8);
+
+$color-deep-black: #151515;
+$color-soft-black: #202020;
+$color-soft-black-45: rgba(32, 32, 32, 0.45);
+
+$color-yellow: #f5b335;
+$color-golden-yellow: #f1b434;
+$color-golden-yellow-80: rgba(245, 179, 53, 0.8);
+$color-soft-yellow: #f1f0e7;
+
+$colors: (
+				'white': $color-white,
+				'white-80': $color-white-80,
+				'deep-black': $color-deep-black,
+				'soft-black': $color-soft-black,
+				'soft-black-45': $color-soft-black-45,
+				'yellow': $color-yellow,
+				'golden-yellow': $color-golden-yellow,
+				'golden-yellow-80': $color-golden-yellow-80,
+				'soft-yellow': $color-soft-yellow
+);
+
+$color-primary-white: $color-white;
+$color-primary-black: $color-deep-black;
+$color-primary-yellow: $color-golden-yellow;
+
+$color-secondary-white: $color-white-80;
+$color-secondary-black: $color-soft-black;
+$color-secondary-yellow: $color-yellow;
+
+// Transitions
+$transition-duration: 0.3s;
+$transition-timing-function: ease-out;
+
+// Z-INDEXES
+$ui-index--1: -1; // Для елементів для картинок бекграундів
+$ui-index-1: 1; // Для елементів, що наповзають, у загальному потоці
+$ui-index-2: 2; // Для елементів, що наповзають, у загальному потоці
+$ui-index-3: 3; // Для масок
+$ui-index-4: 4; // Для сайдбарів
+$ui-index-5: 5; // Для модалок
+$ui-index-6: 6; // Для елементів, перекривающіх усе
+
+// Hover for mouse device
+$mouse-device: '(hover: hover) and (pointer: fine)';
+
+// Border:
+$border-gold: 2px solid var(--color-golden-yellow);
+.modal {
+	position: fixed;
+	z-index: $ui-index-5;
+}
+
+.sidebar {
+	position: fixed;
+	z-index: $ui-index-4;
+}

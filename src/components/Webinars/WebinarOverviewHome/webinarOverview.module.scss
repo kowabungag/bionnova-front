@@ -1,0 +1,412 @@
+.root {
+  max-height: 700px;
+  overflow: hidden;
+
+  .wrapper {
+    margin: 0 27px 0 23px;
+    @media screen and (max-width: 1200px) {
+      margin: 0 20px;
+    }
+    @media screen and (max-width: 1024px) {
+      margin: 0 0 0 10px;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  .back {
+    margin-top: 44px;
+    height: 70px;
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 34px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    color: rgba(245, 179, 53, 0.80);
+
+    &:before {
+      top: -2px;
+      left: 0;
+      position: absolute;
+      content: url("../../../app/media/images/backArrowGolden.svg");
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: minmax(1fr, 880px) minmax(1fr, 1fr);
+    grid-template-areas: 'scrollable fixed';
+    //display: flex;
+    margin-top: -20px;
+    column-gap: 65px;
+    @media screen and (max-width: 1200px) {
+      column-gap: 30px;
+    }
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 330px 1fr;
+      column-gap: 0;
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-areas: 'scrollable' 'fixed';
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .column {
+    height: 100%;
+  }
+
+  .scrollable {
+    max-width: 880px;
+    margin: 10px 0 -23px 0;
+    grid-area: scrollable;
+    background: #1D1D1D;
+    overflow-y: scroll;
+    max-height: 585px;
+    padding: 30px 16px 30px 40px;
+
+    &::-webkit-scrollbar {
+      flex-shrink: 0;
+      width: 34px;
+      background: #151515;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 12px solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
+      border-radius: 9999px;
+
+      background-color: rgba(217, 217, 217, 0.30);
+
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+
+    .section {
+      grid-area: section;
+      padding: 0;
+      font-size: 24px;
+      color: rgba(241, 240, 231, 0.40);
+      font-style: normal;
+      font-weight: 300;
+      @media screen and (max-width: 768px){
+        padding-top: 40px;
+      }
+    }
+
+    .name {
+      grid-area: name;
+      max-width: 300px;
+      padding-top: 24px;
+      font-size: 32px;
+      text-transform: uppercase;
+      @media screen and (max-width: 390px){
+        font-size: 28px;
+      }
+    }
+
+
+    .text {
+      grid-area: text;
+      max-width: 782px;
+      padding-top: 24px;
+      font-size: 20px;
+    }
+
+
+    .imgWrapper{
+      margin-top: 40px;
+      max-height: 300px;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        grid-area: image;
+      }
+    }
+
+    .description {
+
+    }
+
+
+    @media screen and (max-width: 1200px) {
+      padding: 20px 16px 20px 20px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 20px 0;
+      overflow-y: unset;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      max-height: 100%;
+
+      .imgWrapper{
+        order: 4;
+        height: 340px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .section {
+        order: 1;
+      }
+
+      .name {
+        order: 2;
+      }
+
+      .contentTop {
+        order: 3;
+      }
+
+
+      .text {
+        order: 5;
+      }
+
+
+
+
+      .description {
+        order: 6;
+      }
+    }
+  }
+
+  .fixed {
+    grid-area: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .contentLectures {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      p {
+        color: rgba(241, 240, 231, 0.33);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%; /* 26px */
+        width: 344px;
+        white-space: nowrap;
+        text-align: left;
+        position: relative;
+        padding-left: 60px;
+
+        &:before {
+          position: absolute;
+          display: inline-block;
+          left: 29px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+
+      .youtube {
+        &:before {
+          content: url("../../../app/media/images/youtube.svg");
+
+        }
+      }
+
+      .synopsis {
+        &:before {
+          content: url("../../../app/media/images/sinopsis.svg");
+        }
+      }
+
+      .presentation {
+        &:before {
+          content: url("../../../app/media/images/presentation.svg");
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+
+        p {
+          width: 320px;
+          padding-left: 40px;
+
+          &:before {
+            left: 10px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 850px) {
+        p {
+          width: 255px;
+          padding-left: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+      @media screen and (max-width: 768px) {
+        p {
+          width: 255px;
+          padding-left: 0;
+
+          &:before {
+            display: block;
+            left: -32px;
+          }
+        }
+      }
+      @media screen and (max-width: 390px) {
+        p {
+          font-size: 18px;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+
+    .contentBuy {
+      .price {
+        margin: 0 0 35px;
+        text-align: center;
+        color: #F5B335;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 41.6px */
+        text-transform: uppercase;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      overflow: auto;
+      .contentLectures {
+        margin-top: 50px;
+      }
+      .contentBuy {
+        .price {
+          margin: 73px 0 60px;
+        }
+      }
+    }
+  }
+
+  .date {
+    padding: 10px 0 0 0;
+    margin: 0 0 0 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    &:before {
+      content: url("../../../app/media/images/calendar.svg");
+      position: relative;
+      top: 4.5px;
+      left: -12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .teacher {
+    margin: 0 0 0 10px;
+    padding: 24px 0 0 26px;
+    max-width: 250px;
+    font-size: 24px;
+    position: relative;
+
+    &:before {
+      content: url("../../../app/media/images/user.svg");
+      position: absolute;
+      top: 50%;
+      left: -12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .program {
+    color: #F1F0E7;
+    padding: 24px 0 0 12px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%; /* 31.2px */
+    &:before {
+      content: url("../../../app/media/images/book.svg");
+      position: relative;
+      top: 4.5px;
+      left: -12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .time {
+    padding: 24px 0 0 0;
+    margin: 0 0 0 10px;
+    font-size: 20px;
+
+    &:before {
+      content: url("../../../app/media/images/clock.svg");
+      position: relative;
+      top: 4.5px;
+      left: -12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  .showOnPhone {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .hideOnPhone {
+    display: block;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    max-height: 100%;
+    overflow: auto;
+  }
+
+}
+
+

@@ -1,0 +1,70 @@
+.root {
+  max-width: 920px;
+
+  li {
+    color: var(--color-white);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+  }
+
+  .program {
+    ol:first-child {
+      padding: 0 0 0 25px;
+    }
+
+    ol {
+      padding: 30px 0 0 25px;
+    }
+
+    ul {
+      li {
+        list-style: disc;
+        margin: 0 0 0 33px;
+      }
+    }
+
+  }
+
+  .description {
+    padding: 27px 0 0 0;
+
+    .programTitle {
+      color: #D9D9D9;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 26px */
+    }
+
+    ul {
+      li {
+        position: relative;
+        max-width: 670px;
+        margin: 25px 0 0 36px;
+        color: #D9D9D9;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%;
+
+        &:before {
+          content: url("../../../app/media/images/check.svg");
+          position: absolute;
+          top: -1px;
+          left: -36px;
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+  }
+}

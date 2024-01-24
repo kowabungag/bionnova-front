@@ -1,0 +1,61 @@
+@import './base';
+@import './global';
+
+@import './common/btns';
+@import './common/dropdown-menu';
+@import './common/burger-menu';
+@import './common/advantages__item';
+@import './common/marquee';
+@import './common/line';
+@import './common/achievements__items';
+@import './common/feedback__card';
+@import './common/partners';
+
+@import './components/header';
+@import './components/footer';
+
+@import './pages/main';
+
+
+.back_group {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 18px;
+  column-gap: 14px;
+  align-items: center;
+
+  .back {
+    white-space: nowrap;
+    position: relative;
+    padding: 0 0 0 34px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    color: rgba(245, 179, 53, 0.80);
+
+    &:before {
+      top: 0px;
+      left: 0;
+      position: absolute;
+      content: url("../../app/media/images/backGolden.svg");
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .back_white {
+    color: #fff;
+
+    &:before {
+      content: url("../../app/media/images/backWhite.svg");
+    }
+  }
+  @media screen and (max-width: 768px){
+    .back{
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.root {
+  .container {
+    max-width: 1070px;
+    width: 100%;
+    padding: 0 15px 130px;
+    margin: 0 auto;
+  }
+
+  .title {
+    text-align: center;
+    color: #F1F0E7;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 91px */
+  }
+
+  .collapse {
+
+  }
+
+  .form {
+    padding-top: 130px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .title {
+      font-size: 52px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .title {
+      font-size: 32px;
+    }
+  }
+
+
+}

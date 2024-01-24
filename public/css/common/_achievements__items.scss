@@ -1,0 +1,55 @@
+.achievements__items {
+	max-width: 197px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding-left: 20px;
+
+	@include media-breakpoint-up(md) {
+		padding-left: 0;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		transform: translateX(-50%);
+
+		width: 20px;
+		height: 2px;
+		background-color: var(--color-soft-black);
+
+		@include media-breakpoint-up(md) {
+			top: -50px;
+			left: 50%;
+			transform: translateX(-50%);
+
+			width: 2px;
+			height: 20px;
+		}
+	}
+
+	&--value {
+		font-size: 6rem;
+		font-weight: 800;
+		line-height: 1.1;
+
+		@include media-breakpoint-up(lg) {
+			font-size: 5.25rem;
+		}
+
+		@include media-breakpoint-up(xl) {
+			font-size: 5.75rem;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			font-size: 6.25rem;
+		}
+	}
+
+	p {
+		line-height: 1.3;
+		color: var(--color-soft-black);
+	}
+}

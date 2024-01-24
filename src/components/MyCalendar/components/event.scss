@@ -1,0 +1,83 @@
+.calendar_event {
+  position: relative;
+  padding: 29px 12px 0 12px;
+  height: 221px;
+
+  a {
+    text-decoration: inherit;
+
+    &:hover {
+
+    }
+  }
+
+  .text_darken {
+    color: rgba(241, 240, 231, 0.40);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  .event_name {
+    color: #F1F0E7;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    white-space: pre-wrap;
+  }
+
+  .event_time {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    column-gap: 6px;
+    bottom: 12px;
+    width: 100%;
+
+    p {
+      color: #515151;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .arrow {
+      position: absolute;
+      right: 20px;
+    }
+  }
+
+  .event_price {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    color: #F5B335;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0;
+    padding: 0 0 12px 30px;
+    height: 55px;
+    .event_name {
+      font-size: 14px;
+      margin: 0;
+      height: 55px;
+      overflow: hidden;
+    }
+    .text_darken {
+      display: none;
+    }
+    .event_time {
+
+      display: none;
+    }
+    .event_price {
+      display: none;
+    }
+  }
+}
+

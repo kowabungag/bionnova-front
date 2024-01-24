@@ -1,0 +1,120 @@
+.root {
+  overflow: hidden;
+  background: var(--color-white) linear-gradient(90deg, rgba(241, 240, 231, 1) 66%, rgba(255, 230, 114, 0.4767156862745098) 94%);
+  position: relative;
+
+  &::after {
+    content: url("../../../app/media/images/individualForm/bg.png");
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 85px 15px 100px;
+    max-width: 1590px;
+    margin: 0 auto;
+  }
+
+  .title {
+    color: var(--color-soft-black);
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 110%; /* 66px */
+  }
+
+
+  .row {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: minmax(auto, 650px) 1fr;
+    column-gap: 60px;
+
+  }
+
+  .column {
+
+  }
+
+  .text {
+    color: var(--color-soft-black);
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 130%; /* 46.8px */
+  }
+
+  .subtext {
+    padding-top: 16px;
+    color: var(--color-soft-black);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%; /* 31.2px */
+  }
+
+  @media screen and (max-width: 1200px) {
+    .title {
+      font-size: 48px;
+    }
+    .text {
+      font-size: 26px;
+    }
+
+    .subtext {
+      font-size: 22px;
+    }
+    .row {
+      padding-top: 55px;
+      grid-template-columns: minmax(auto, 650px) minmax(415px, 1fr);
+      column-gap: 30px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+
+    background: var(--color-white);
+    &::after {
+      display: none;
+    }
+    .content {
+      padding: 38px 15px 40px;
+    }
+    .title {
+      font-size: 42px;
+    }
+    .row {
+      padding-top: 14px;
+      grid-template-columns: 1fr;
+      column-gap: 30px;
+    }
+    .text {
+      font-size: 26px;
+    }
+
+    .subtext {
+      font-size: 22px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .title {
+      font-size: 36px;
+    }
+    .row {
+      grid-template-columns: 1fr;
+      column-gap: 30px;
+    }
+    .text {
+      padding: 0;
+      font-size: 20px;
+    }
+
+    .subtext {
+      padding: 20px 0 0 0;
+      font-size: 16px;
+    }
+  }
+}

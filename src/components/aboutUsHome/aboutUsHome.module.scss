@@ -1,0 +1,153 @@
+.root {
+  .row {
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    column-gap: 60px;
+    padding: 40px 20px 20px 55px;
+    @media screen and (max-width: 1440px) {
+      grid-template-columns: 1fr 2fr;
+    }
+    @media screen and (max-width: 1440px) {
+      grid-template-columns: 1fr 2fr;
+      padding: 40px 5px 20px 33px;
+      column-gap: 20px;
+    }
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 31px 5px 20px 15px;
+    }
+  }
+
+  .column {
+
+  }
+
+  .fixed {
+    max-width: 360px;
+
+    .content {
+
+      width: 100%;
+    }
+
+    p {
+      color: #F1F0E7;
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    .text {
+      padding-top: 32px;
+    }
+
+    .subtext {
+      padding-top: 32px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+
+      p {
+        color: #F1F0E7;
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 32px;
+      }
+      .subtext {
+        padding-top: 24px;
+      }
+    }
+  }
+
+  .scrollable {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 872px;
+
+
+    .content {
+      padding: 40px 35px 40px 30px;
+      background: #1D1D1D;;
+      display: flex;
+      align-items: center;
+      column-gap: 23px;
+    }
+
+    img {
+
+    }
+
+    p {
+      color: rgba(241, 240, 231, 0.80);
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .comment {
+      border-left: 2px solid #F1B434;
+      padding-left: 23px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      max-width: 520px;
+    }
+
+    .author {
+      position: relative;
+      white-space: nowrap;
+
+      &::before {
+        content: '-';
+        display: inline-block;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      padding-top: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      p {
+        font-size: 16px;
+      }
+      .content {
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 20px 28px 24px 20px;
+        margin: 0 26px;
+      }
+
+      .comment {
+        border-left: none;
+        border-bottom: 2px solid #F1B434;
+        padding: 0 0 20px 0;
+      }
+
+      .author {
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+      }
+
+    }
+  }
+
+}
