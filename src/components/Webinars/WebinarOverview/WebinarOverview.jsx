@@ -1,62 +1,62 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 // components
-import Container from '../../Container/Container'
+import Container from '../../Container/Container';
 
 // styles
-import * as styles from './webinarOverview.module.scss'
+import * as styles from './webinarOverview.module.scss';
 
-import MyButton from '../../UI/MyButton/MyButton'
+import MyButton from '../../UI/MyButton/MyButton';
 
-import logo from '../../../app/media/images/webinar/logo.png'
-import IndividualForm from '../../UI/IndividualForm/IndividualForm'
-import WebinarDescription from '../WebinarDescription/WebinarDescription'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useTranslation } from 'react-i18next'
-import { findObjectById } from '@/helpers/findObjectById'
-import MyLoader from '@/components/UI/MyLoader/MyLoader'
-import { convertDateFormat } from '@/helpers/convertTime'
-import { addBasketElement } from '@/features/basket/basketSlice'
-import { useDispatch } from 'react-redux'
+import logo from '../../../app/media/images/webinar/logo.png';
+import IndividualForm from '../../UI/IndividualForm/IndividualForm';
+import WebinarDescription from '../WebinarDescription/WebinarDescription';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
+import { findObjectById } from '@/helpers/findObjectById';
+import MyLoader from '@/components/UI/MyLoader/MyLoader';
+import { convertDateFormat } from '@/helpers/convertTime';
+import { addBasketElement } from '@/features/basket/basketSlice';
+import { useDispatch } from 'react-redux';
 
 export const WebinarOverview = ({ webinars }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
-  const [webinar, setWebinar] = useState()
-  const [programId, setProgramId] = useState('')
-  const [programType, setProgramType] = useState('')
+  const [webinar, setWebinar] = useState();
+  const [programId, setProgramId] = useState('');
+  const [programType, setProgramType] = useState('');
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    const search = +window.location.pathname.split('/')[3]
+    const search = +window.location.pathname.split('/')[3];
 
-    const currentHash = window.location.hash
-    const hashList = currentHash.split('&')
+    const currentHash = window.location.hash;
+    const hashList = currentHash.split('&');
 
-    const programId = hashList[0]?.substring(1)?.split('=')[1]
-    const programType = hashList[1]?.substring(1)?.split('=')[1]
+    const programId = hashList[0]?.substring(1)?.split('=')[1];
+    const programType = hashList[1]?.substring(1)?.split('=')[1];
 
-    setWebinar(findObjectById(webinars, search))
-    setProgramId(programId)
-    setProgramType(programType)
-  }, [webinars])
+    setWebinar(findObjectById(webinars, search));
+    setProgramId(programId);
+    setProgramType(programType);
+  }, [webinars]);
 
   if (!webinar) {
-    return <MyLoader />
+    return <MyLoader />;
   }
 
-  const isTopicPharma = webinars.topic === 'Pharmacovigilance'
+  const isTopicPharma = webinars.topic === 'Pharmacovigilance';
 
   const handleClick = () => {
     const payload = {
       data: webinar,
       type: 'webinars',
       t,
-    }
-    dispatch(addBasketElement(payload))
-  }
+    };
+    dispatch(addBasketElement(payload));
+  };
   return (
     <div>
       <Container sizeZero>
@@ -113,6 +113,7 @@ export const WebinarOverview = ({ webinars }) => {
                   <span>{t('additional.webinars')} </span> {webinar.levelOfDifficulty}
                 </p>
               )}
+              <p className={styles.price}>${webinar.price}</p>
             </div>
             <div className={styles.btnBlock}>
               <MyButton onClick={handleClick} golden>
@@ -155,5 +156,5 @@ export const WebinarOverview = ({ webinars }) => {
         <IndividualForm isWhite type="individual" />
       </div>
     </div>
-  )
-}
+  );
+};

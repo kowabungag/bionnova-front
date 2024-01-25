@@ -20,36 +20,35 @@
     padding-top: 37px;
     display: grid;
     grid-template-areas:
-    "img description participants"
-    "img button participants";
+      'img description participants'
+      'img button participants';
     @media screen and (max-width: 1500px) {
       column-gap: 70px;
       grid-template-areas:
-      "img description"
-      "img participants"
-      ". button ";
+        'img description'
+        'img participants'
+        '. button ';
     }
     @media screen and (max-width: 1200px) {
       grid-template-columns: 1fr 1fr;
       column-gap: 40px;
       grid-template-areas:
-      "img description"
-      "img participants"
-      ". button ";
+        'img description'
+        'img participants'
+        '. button ';
     }
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       column-gap: 40px;
       grid-template-areas:
-      "description"
-      "img"
-      "participants"
-      "button ";
+        'description'
+        'img'
+        'participants'
+        'button ';
     }
   }
 
-  grid-template-columns:4fr 3fr 2fr;
-
+  grid-template-columns: 4fr 3fr 2fr;
 
   .image {
     grid-area: img;
@@ -75,15 +74,26 @@
       text-transform: none !important;
     }
 
-
     .title {
       margin: 0 0 0 -20px;
       font-size: 24px;
       font-weight: 300;
-      color: rgba(241, 240, 231, 0.40);
+      color: rgba(241, 240, 231, 0.4);
     }
 
-    .date, .teacher, .program, .format, .exactTime, .level {
+    .price {
+      margin-top: 32px;
+      font-size: 32px;
+      color: var(--color-golden-yellow);
+      margin-left: -20px;
+    }
+
+    .date,
+    .teacher,
+    .program,
+    .format,
+    .exactTime,
+    .level {
       font-size: 24px;
       color: var(--color-white);
 
@@ -114,7 +124,7 @@
       font-weight: 300;
 
       &:before {
-        content: url("../../../app/media/images/calendar.svg");
+        content: url('../../../app/media/images/calendar.svg');
       }
     }
 
@@ -123,32 +133,32 @@
       max-width: 310px;
 
       &:before {
-        content: url("../../../app/media/images/user.svg");
+        content: url('../../../app/media/images/user.svg');
       }
     }
 
     .program {
       &:before {
-        content: url("../../../app/media/images/book.svg");
+        content: url('../../../app/media/images/book.svg');
       }
     }
 
     .format {
       &:before {
-        content: url("../../../app/media/images/clock.svg");
+        content: url('../../../app/media/images/clock.svg');
       }
     }
 
     .exactTime {
       &:before {
-        content: url("../../../app/media/images/clock.svg");
+        content: url('../../../app/media/images/clock.svg');
       }
     }
 
-    .level{
+    .level {
       padding: 0 0 0 20px;
       &:before {
-        content: url("../../../app/media/images/star.svg");
+        content: url('../../../app/media/images/star.svg');
       }
     }
 
@@ -166,12 +176,16 @@
       span {
         font-size: 22px;
       }
-      .date, .teacher, .program, .format, .exactTime {
+      .date,
+      .teacher,
+      .program,
+      .format,
+      .exactTime {
         margin: 25px 0 0 0;
         padding: 0 0 0 20px;
         font-size: 22px;
       }
-      .level{
+      .level {
         font-size: 22px;
       }
     }
@@ -184,10 +198,19 @@
         margin: 0;
       }
 
+      .price {
+        margin-left: 0;
+      }
+
       span {
         font-size: 20px;
       }
-      .date, .teacher, .program, .format, .exactTime ,.level{
+      .date,
+      .teacher,
+      .program,
+      .format,
+      .exactTime,
+      .level {
         margin: 16px 0 0 20px;
         padding: 0 0 0 20px;
         font-size: 20px;
@@ -198,11 +221,14 @@
       }
     }
     @media screen and (max-width: 450px) {
-
       span {
         font-size: 20px;
       }
-      .date, .teacher, .program, .format, .exactTime {
+      .date,
+      .teacher,
+      .program,
+      .format,
+      .exactTime {
         margin: 16px 0 0 20px;
         padding: 0 0 0 20px;
         font-size: 18px;
@@ -256,9 +282,9 @@
     grid-area: participants;
     display: grid;
     grid-template-areas:
-    "l1 r1"
-    "l2 r2"
-    "l3 r3";
+      'l1 r1'
+      'l2 r2'
+      'l3 r3';
     grid-template-columns: 5fr 3fr;
 
     p {
@@ -303,7 +329,6 @@
         white-space: nowrap;
         padding: 18px;
       }
-
     }
     @media screen and (max-width: 768px) {
       justify-self: center;
@@ -320,10 +345,9 @@
   }
 }
 
-
 .descriptionBlock {
   padding: 180px 0 210px;
-  background-image: url("../../../app/media/images/webinarBg.png");
+  background-image: url('../../../app/media/images/webinarBg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -120px 275px;
@@ -334,7 +358,7 @@
     padding: 0 15px;
   }
 
-  .rowProgram{
+  .rowProgram {
     padding-top: 120px;
   }
 
@@ -342,7 +366,7 @@
     display: grid;
     grid-template-columns: 640px 1fr;
     column-gap: 30px;
-    grid-template-areas: "text content";
+    grid-template-areas: 'text content';
   }
 
   .title {
@@ -355,7 +379,7 @@
   }
 
   .contentTitle {
-    color: #D9D9D9;
+    color: #d9d9d9;
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -371,19 +395,19 @@
       grid-template-columns: 1fr 1fr;
     }
   }
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width: 1200px) {
     background-position: -435px 404px;
   }
   @media screen and (max-width: 768px) {
     padding: 64px 0 160px;
-    background-image: url("../../../app/media/images/webinarBgMedium.png");
+    background-image: url('../../../app/media/images/webinarBgMedium.png');
     background-position: 0 105%;
     background-size: contain;
     .title {
       padding: 0;
     }
     .row {
-      grid-template-areas: "text""content";
+      grid-template-areas: 'text' 'content';
       grid-template-columns: 1fr;
     }
     .rowProgram {
@@ -393,7 +417,7 @@
       margin-top: 24px;
     }
   }
-  @media screen and (max-width: 450px){
-    background-image: url("../../../app/media/images/webinarBgSmall.png");
+  @media screen and (max-width: 450px) {
+    background-image: url('../../../app/media/images/webinarBgSmall.png');
   }
 }
