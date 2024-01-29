@@ -18,7 +18,7 @@ const Event = (props) => {
 
   return (
     <div className="calendar_event">
-      {/* <p className="event_price">{formatPriceWithCurrency(price)}</p> */}
+      <p className="event_price">{formatPriceWithCurrency(price)}</p>
       <div onClick={() => window.open(eventLink, '_blank')}>
         <Link
           className="text_darken"
