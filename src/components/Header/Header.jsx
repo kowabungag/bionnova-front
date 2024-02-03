@@ -54,7 +54,7 @@ const Header = ({ type }) => {
 
   useEffect(() => {
     setEndpoint(pathname);
-
+    console.log(pathname);
     window.addEventListener('scroll', () => {
       if (window.scrollY > 5) {
         setIsScrolled(true);
