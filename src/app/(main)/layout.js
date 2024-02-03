@@ -5,10 +5,10 @@ export default function MainLayout({
   children, // will be a page or nested layout
 }) {
   return (
-    <section>
+    <>
       <Header />
       {children}
       <Footer />
-    </section>
+    </>
   );
 }
