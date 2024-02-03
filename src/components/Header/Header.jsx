@@ -146,8 +146,8 @@ const Header = ({ type }) => {
           <ul>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/aboutcompany' ? 'active' : ''}`}
-                href={'/aboutCompany'}
+                className={`text-uppercase ${endpoint === '/about-company' ? 'active' : ''}`}
+                href={'/about-company'}
               >
                 {t('header.about')}
               </Link>
@@ -232,8 +232,8 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/aboutcompany' ? 'active' : ''}`}
-                href={'/aboutCompany'}
+                className={`text-uppercase ${endpoint === '/about-company' ? 'active' : ''}`}
+                href={'/about-company'}
               >
                 {t('header.about')}
               </Link>
