@@ -42,6 +42,7 @@ const Header = ({ type }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState({ value: language, label: language });
   const pathname = usePathname();
+  const newPathname = pathname.replace(/[^a-zA-Z0-9 ]/g, '');
 
   useEffect(() => {
     if (burgerState) {
@@ -53,7 +54,7 @@ const Header = ({ type }) => {
   const ref = useRef();
 
   useEffect(() => {
-    setEndpoint(pathname);
+    setEndpoint(newPathname);
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 5) {
@@ -146,7 +147,7 @@ const Header = ({ type }) => {
           <ul>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/about-company' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'about-company' ? 'active' : ''}`}
                 href={'/about-company'}
               >
                 {t('header.about')}
@@ -154,7 +155,7 @@ const Header = ({ type }) => {
             </li>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/services' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'services' ? 'active' : ''}`}
                 href={'/services'}
               >
                 {t('header.services')}
@@ -162,7 +163,7 @@ const Header = ({ type }) => {
             </li>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/activities' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'activities' ? 'active' : ''}`}
                 href={'/activities'}
               >
                 {t('header.events')}
@@ -170,7 +171,7 @@ const Header = ({ type }) => {
             </li>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/contacts' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'contacts' ? 'active' : ''}`}
                 href={'/contacts'}
               >
                 {t('header.contacts')}
@@ -226,13 +227,13 @@ const Header = ({ type }) => {
             className={`${type === 'cabinet' ? 'nav-menu__mobile_cabinet' : ''} nav-menu__mobile`}
           >
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
-              <Link className={`text-uppercase ${endpoint === '/' ? 'active' : ''}`} href={'/'}>
+              <Link className={`text-uppercase ${endpoint === '' ? 'active' : ''}`} href={'/'}>
                 {t('header.main')}
               </Link>
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/about-company' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'about-company' ? 'active' : ''}`}
                 href={'/about-company'}
               >
                 {t('header.about')}
@@ -240,7 +241,7 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/services' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'services' ? 'active' : ''}`}
                 href={'/services'}
               >
                 {t('header.services')}
@@ -248,7 +249,7 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/activities' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'activities' ? 'active' : ''}`}
                 href={'/activities'}
               >
                 {t('header.events')}
@@ -256,7 +257,7 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/contacts' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'contacts' ? 'active' : ''}`}
                 href={'/contacts'}
               >
                 {t('header.contacts')}
@@ -267,7 +268,7 @@ const Header = ({ type }) => {
               onClick={handleMobileClick}
             >
               <Link
-                className={`text-uppercase ${endpoint === '/basket' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'basket' ? 'active' : ''}`}
                 href={'/basket'}
               >
                 {t('header.basket')}
@@ -278,7 +279,7 @@ const Header = ({ type }) => {
               onClick={handleMobileClick}
             >
               <Link
-                className={`text-uppercase ${endpoint === '/home' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === 'home' ? 'active' : ''}`}
                 href={'/home/about-us/#about-us'}
               >
                 {t('header.account')}
