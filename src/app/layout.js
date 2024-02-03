@@ -1,6 +1,5 @@
 'use client';
 import './css/style.scss';
-
 // redux
 import { Provider, useDispatch } from 'react-redux';
 import { store } from '@/store/store';
