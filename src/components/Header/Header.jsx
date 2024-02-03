@@ -146,7 +146,7 @@ const Header = ({ type }) => {
           <ul>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/aboutCompany/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/aboutCompany' ? 'active' : ''}`}
                 href={'/aboutCompany'}
               >
                 {t('header.about')}
@@ -154,7 +154,7 @@ const Header = ({ type }) => {
             </li>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/services/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/services' ? 'active' : ''}`}
                 href={'/services'}
               >
                 {t('header.services')}
@@ -162,7 +162,7 @@ const Header = ({ type }) => {
             </li>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/activities/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/activities' ? 'active' : ''}`}
                 href={'/activities'}
               >
                 {t('header.events')}
@@ -170,7 +170,7 @@ const Header = ({ type }) => {
             </li>
             <li>
               <Link
-                className={`text-uppercase ${endpoint === '/contacts/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/contacts' ? 'active' : ''}`}
                 href={'/contacts'}
               >
                 {t('header.contacts')}
@@ -232,7 +232,7 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/aboutCompany/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/aboutCompany' ? 'active' : ''}`}
                 href={'/aboutCompany'}
               >
                 {t('header.about')}
@@ -240,7 +240,7 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/services/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/services' ? 'active' : ''}`}
                 href={'/services'}
               >
                 {t('header.services')}
@@ -248,7 +248,7 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/activities/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/activities' ? 'active' : ''}`}
                 href={'/activities'}
               >
                 {t('header.events')}
@@ -256,7 +256,7 @@ const Header = ({ type }) => {
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
               <Link
-                className={`text-uppercase ${endpoint === '/contacts/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/contacts' ? 'active' : ''}`}
                 href={'/contacts'}
               >
                 {t('header.contacts')}
@@ -267,7 +267,7 @@ const Header = ({ type }) => {
               onClick={handleMobileClick}
             >
               <Link
-                className={`text-uppercase ${endpoint === '/basket/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/basket' ? 'active' : ''}`}
                 href={'/basket'}
               >
                 {t('header.basket')}
@@ -278,7 +278,7 @@ const Header = ({ type }) => {
               onClick={handleMobileClick}
             >
               <Link
-                className={`text-uppercase ${endpoint === '/home/' ? 'active' : ''}`}
+                className={`text-uppercase ${endpoint === '/home' ? 'active' : ''}`}
                 href={'/home/about-us/#about-us'}
               >
                 {t('header.account')}
