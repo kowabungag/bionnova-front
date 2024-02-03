@@ -226,7 +226,7 @@ const Header = ({ type }) => {
             className={`${type === 'cabinet' ? 'nav-menu__mobile_cabinet' : ''} nav-menu__mobile`}
           >
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
-              <Link className={`text-uppercase ${endpoint === '' ? 'active' : ''}`} href={'/'}>
+              <Link className={`text-uppercase ${endpoint === '/' ? 'active' : ''}`} href={'/'}>
                 {t('header.main')}
               </Link>
             </li>
