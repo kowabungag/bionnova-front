@@ -9,4 +9,4 @@ const AboutCompanyPage = () => {
   );
 };
 
-export default AboutCompany;
+export default AboutCompanyPage;

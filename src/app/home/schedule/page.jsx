@@ -20,7 +20,7 @@ const Shedule = () => {
     globalWebinarsByLanguage,
   } = useHomeLayoutContext();
 
-  console.log(userAvailableWebinars);
+  // console.log(userAvailableWebinars);
 
   return (
     <div>
