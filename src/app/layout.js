@@ -3,7 +3,7 @@ import './css/style.scss';
 // redux
 import { Provider, useDispatch } from 'react-redux';
 import { store } from '@/store/store';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { fetchUserCourses } from '@/features/userSlice/userSlice';
 import { fetchCourses } from '@/features/coursesSlice/coursesSlice';
 
