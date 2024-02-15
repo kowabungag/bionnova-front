@@ -146,6 +146,7 @@ i18n
               text2:
                 'Our main goal is to provide the needs of the market with the best specialists in their field. We do this by teaching professionals innovative concepts that they can only get from practicing experts.',
             },
+            preparation: 'Information in preparation',
           },
           aboutCompany: {
             hero: {
@@ -486,6 +487,7 @@ i18n
               text2:
                 'Наша главная цель это обеспечение потребностей рынка лучшими специалистами в своей области. Мы делаем это, обучая специалистов инновационным концепциям, которые они могут получить только у практикующих экспертов.',
             },
+            preparation: 'Информация готовится',
           },
           aboutCompany: {
             hero: {
@@ -810,6 +812,7 @@ i18n
               text2:
                 'Наша головна мета є забезпечення потреб ринку найкращими фахівцями у своїй галузі. Ми робимо це, навчаючи фахівців інноваційним концепціям, які вони можуть отримати тільки у практикуючих експертів.',
             },
+            preparation: 'Інформація готується',
           },
           aboutCompany: {
             hero: {
