@@ -6,7 +6,7 @@ const Preparation = () => {
   const { t } = useTranslation();
   return (
     <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-      <h1>{t('home.preparation')}</h1>
+      <h1 style={{ color: 'var(--color-yellow)' }}>{t('home.preparation')}</h1>
     </div>
   );
 };
