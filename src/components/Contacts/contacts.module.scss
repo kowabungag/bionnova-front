@@ -1,41 +1,39 @@
 .root {
-background-color: #151515;
+  background-color: #151515;
   position: relative;
-  background-image: url("../../app/media/images/contacts/bg.svg");
+  background-image: url('../../../public/media/images/contacts/bg.svg');
   background-repeat: no-repeat;
   background-position: right top;
 
   .row {
-
-  max-width: 1150px;
+    max-width: 1150px;
     padding: 130px 0 0 0;
     display: grid;
     column-gap: 50px;
     grid-template-areas:
-           'contacts form'
-           'contactInfo form';
+      'contacts form'
+      'contactInfo form';
     grid-template-columns: 1fr 1fr;
-    @media screen and (max-width: 1600px){
-      padding: 130px 0 0 60px
+    @media screen and (max-width: 1600px) {
+      padding: 130px 0 0 60px;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       padding: 10px 0 0 0;
       align-self: center;
-      grid-template-columns: 1fr ;
+      grid-template-columns: 1fr;
       grid-template-areas:
-           'contacts'
-           'form'
-           'contactInfo';
+        'contacts'
+        'form'
+        'contactInfo';
     }
   }
-
 
   .topInfo {
     grid-area: contacts;
     max-width: 470px;
 
     .title {
-      color: #F1F0E7;
+      color: #f1f0e7;
       font-size: 60px;
       font-style: normal;
       font-weight: 600;
@@ -45,14 +43,14 @@ background-color: #151515;
     .subtitle {
       max-width: 420px;
       padding-top: 36px;
-      color: #F1F0E7;
+      color: #f1f0e7;
       font-size: 32px;
       font-style: normal;
       font-weight: 200;
       line-height: 130%;
     }
 
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
       .title {
         font-size: 54px;
       }
@@ -61,7 +59,7 @@ background-color: #151515;
         font-size: 26px;
       }
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       .title {
         font-size: 48px;
       }
@@ -76,22 +74,21 @@ background-color: #151515;
     max-width: 420px;
     grid-area: contactInfo;
     align-self: end;
-    color: #F1F0E7;
+    color: #f1f0e7;
     font-size: 24px;
     font-weight: 400;
     display: flex;
     flex-direction: column;
 
     a {
-      color: #F1F0E7;
+      color: #f1f0e7;
     }
     p {
-
     }
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
       font-size: 22px;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -99,8 +96,7 @@ background-color: #151515;
   .columnRight {
     grid-area: form;
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     background-image: none;
   }
 }
-

@@ -2,7 +2,6 @@
   padding-top: 45px;
 
   .back {
-
   }
 
   @media screen and (max-width: 1200px) {
@@ -11,14 +10,12 @@
     }
   }
 
-
   @media screen and (max-width: 768px) {
     padding-top: 70px;
     .back {
       margin-top: -20px;
     }
   }
-
 }
 
 .hero {
@@ -26,29 +23,27 @@
     padding-top: 37px;
     display: grid;
     grid-template-areas:
-    ". description"
-    ". button";
-    grid-template-columns:5fr 7fr;
+      '. description'
+      '. button';
+    grid-template-columns: 5fr 7fr;
     @media screen and (max-width: 1500px) {
       column-gap: 70px;
-
     }
     @media screen and (max-width: 1200px) {
       grid-template-columns: 1fr 1fr;
       column-gap: 25px;
       grid-template-areas:
-      ". description"
-      ". button";
+        '. description'
+        '. button';
     }
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       column-gap: 40px;
       grid-template-areas:
-      "description"
-      "button";
+        'description'
+        'button';
     }
   }
-
 
   p {
     font-size: 24px;
@@ -84,16 +79,16 @@
     }
 
     .subtitle {
-      color: rgba(241, 240, 231, 0.80);
+      color: rgba(241, 240, 231, 0.8);
       font-size: 32px;
       font-weight: 300;
     }
 
-    .anchor{
+    .anchor {
       display: inline-block;
       margin-top: 25px;
 
-      a{
+      a {
         font-size: 32px;
         color: var(--color-golden-yellow);
       }
@@ -105,14 +100,16 @@
       color: var(--color-golden-yellow);
     }
 
-    .date, .program, .level {
+    .date,
+    .program,
+    .level {
       margin: 16px 0 0 20px;
       padding: 0 0 0 20px;
       position: relative;
       max-width: 425px;
 
       span {
-        color: rgba(241, 240, 231, 0.40);
+        color: rgba(241, 240, 231, 0.4);
         font-weight: 300;
       }
 
@@ -128,20 +125,19 @@
       font-weight: 300;
 
       &:before {
-        content: url("../../../app/media/images/calendar.svg");
+        content: url('../../../../public/media/images/calendar.svg');
       }
     }
 
     .program {
       &:before {
-        content: url("../../../app/media/images/youtube.svg");
+        content: url('../../../../public/media/images/youtube.svg');
       }
     }
 
-    .level{
-
-      &:before{
-        content: url("../../../app/media/images/star.svg")
+    .level {
+      &:before {
+        content: url('../../../../public/media/images/star.svg');
       }
     }
 
@@ -150,7 +146,6 @@
     }
 
     @media screen and (max-width: 1200px) {
-
       .title {
         max-width: 300px;
         padding: 0 0 20px 0;
@@ -159,10 +154,9 @@
       .subtitle {
         font-size: 26px;
       }
-      .anchor{
-        a{
+      .anchor {
+        a {
           font-size: 26px;
-
         }
       }
 
@@ -173,17 +167,17 @@
       span {
         font-size: 22px;
       }
-      .date, .program {
+      .date,
+      .program {
         margin: 25px 0 0 20px;
         padding: 0 0 0 20px;
         font-size: 22px;
       }
-    .level{
-      font-size: 22px;
-    }
+      .level {
+        font-size: 22px;
+      }
     }
     @media screen and (max-width: 768px) {
-
       .title {
         font-size: 40px;
       }
@@ -191,7 +185,7 @@
       .subtitle {
         font-size: 22px;
       }
-      .anchor{
+      .anchor {
         font-size: 22px;
       }
 
@@ -203,10 +197,14 @@
         font-size: 20px;
       }
 
-      .level{
+      .level {
         font-size: 20px;
       }
-      .date, .teacher, .program, .format, .exactTime {
+      .date,
+      .teacher,
+      .program,
+      .format,
+      .exactTime {
         margin: 16px 0 0 20px;
         padding: 0 0 0 20px;
         font-size: 20px;
@@ -217,15 +215,14 @@
       }
     }
     @media screen and (max-width: 450px) {
-
       .title {
         font-size: 36px;
       }
       .subtitle {
         font-size: 18px;
       }
-      .anchor{
-        a{
+      .anchor {
+        a {
           font-size: 18px;
         }
       }
@@ -235,7 +232,8 @@
       span {
         font-size: 20px;
       }
-      .date, .program {
+      .date,
+      .program {
         margin: 16px 0 0 20px;
         padding: 0 0 0 20px;
         font-size: 18px;
@@ -292,7 +290,7 @@
   .row {
     padding-top: 48px;
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 24px;
     column-gap: 32px;
   }
@@ -303,7 +301,7 @@
     }
 
     .row {
-      grid-template-columns:1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       row-gap: 24px !important;
       column-gap: 24px !important;
     }
@@ -320,7 +318,7 @@
     }
     .row {
       padding-top: 36px;
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
     }
   }
   @media screen and (max-width: 450px) {
@@ -352,7 +350,6 @@
     }
   }
 
-
   @media screen and (max-width: 768px) {
     .collapseWrapper {
       padding: 20px 20px 0;
@@ -377,4 +374,3 @@
     }
   }
 }
-

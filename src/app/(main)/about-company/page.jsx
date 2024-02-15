@@ -3,7 +3,7 @@ import AboutCompany from '@/components/AboutCompany/AboutCompany';
 
 const AboutCompanyPage = () => {
   return (
-    <div className={` page about-page`}>
+    <div className={`page about-page`}>
       <AboutCompany />
     </div>
   );

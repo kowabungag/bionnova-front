@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 import { formatPriceWithCurrency } from '@/components/MyCalendar/utils';
 
-import Clock from '../../../app/media/images/icon/clock.svg';
-import ArrowUpRight from '../../../app/media/images/icon/arrow-up-right.svg';
+import Clock from '../../../../public/media/images/icon/clock.svg';
+import ArrowUpRight from '../../../../public/media/images/icon/arrow-up-right.svg';
 
 import './event.scss';
 import { useTranslation } from 'react-i18next';

@@ -1,11 +1,7 @@
 import Programs from '@/components/Programs/Programs';
 
-const ServicesProgramsList = () => {
-  return (
-    <div>
-      <Programs />
-    </div>
-  );
+const ServicesProgramsList = async () => {
+  return <Programs />;
 };
 
 export default ServicesProgramsList;

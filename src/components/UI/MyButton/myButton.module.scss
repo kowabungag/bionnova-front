@@ -6,7 +6,7 @@
   cursor: pointer;
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
@@ -29,7 +29,7 @@
   padding: 22px 0;
 
   &:hover {
-    color: #F1B434;
+    color: #f1b434;
     border: 3px solid var(--color-golden-yellow);
   }
 }
@@ -37,20 +37,19 @@
 .golden {
   margin: 0 auto;
   background: transparent;
-  color: #F6BE2C;
+  color: #f6be2c;
   font-size: 30px;
   font-weight: 600;
   line-height: 130%; /* 39px */
   padding: 20px 40px;
   gap: 40px;
-  border: 2px solid #F5B335;
+  border: 2px solid #f5b335;
 }
 
 .goldenAnchor {
   padding: 5px;
   line-height: normal;
 }
-
 
 .fullGolden {
   padding: 20px 40px;
@@ -76,10 +75,10 @@
 
   p {
     position: relative;
-    color: #F5B335CC;
+    color: #f5b335cc;
 
     &:before {
-      content: url("../../../app/media/images/arrowGolden.svg");
+      content: url('../../../../public/media/images/arrowGolden.svg');
       width: 24px;
       height: 24px;
       position: absolute;
@@ -107,4 +106,3 @@
     }
   }
 }
-

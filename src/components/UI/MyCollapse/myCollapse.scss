@@ -1,5 +1,4 @@
 .collapse {
-
   .ant-collapse {
     font-family: Inter, serif;
     border: none !important;
@@ -26,7 +25,6 @@
 
   .ant-collapse-content {
     border: none !important;
-
   }
 
   .ant-collapse-content-box {
@@ -46,13 +44,12 @@
       width: 24px;
       height: 24px;
     }
-
   }
 
   .ant-collapse-item-active {
     .anticon {
       svg {
-        transform: rotate(-90deg)!important;
+        transform: rotate(-90deg) !important;
       }
     }
   }
@@ -146,7 +143,6 @@
     }
     .ant-collapse-expand-icon {
       align-self: self-start;
-
     }
     .ant-collapse-header {
       span {
@@ -202,9 +198,9 @@
   }
 }
 
-
 // program
-.collapse-programs, .collapse-webinars {
+.collapse-programs,
+.collapse-webinars {
   .ant-collapse-header {
     background: var(--color-deep-black);
     border: none !important;
@@ -233,7 +229,7 @@
       align-items: center;
 
       &__type {
-        color: rgba(241, 240, 231, 0.40);
+        color: rgba(241, 240, 231, 0.4);
         font-size: 24px;
         font-style: normal;
         font-weight: 300;
@@ -242,7 +238,7 @@
       }
 
       &__price {
-        color: #F5B335;
+        color: #f5b335;
         font-size: 32px;
         font-style: normal;
         font-weight: 400;
@@ -255,7 +251,7 @@
       padding-top: 21px;
 
       &__name {
-        color: #F1F0E7;
+        color: #f1f0e7;
         font-size: 32px;
         font-style: normal;
         font-weight: 300;
@@ -281,7 +277,7 @@
       position: relative;
       margin-top: 24px;
       padding-left: 36px;
-      color: #F1F0E7;
+      color: #f1f0e7;
       font-size: 24px;
       font-style: normal;
       font-weight: 300;
@@ -296,12 +292,11 @@
         position: absolute;
         left: 0px;
         display: inline-block;
-
       }
     }
 
     span {
-      color: #F1F0E7;
+      color: #f1f0e7;
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
@@ -310,25 +305,25 @@
 
     .date {
       &:before {
-        content: url('../../../app/media/images/calendar.svg');
+        content: url('../../../../public/media/images/calendar.svg');
       }
     }
 
     .teacher {
       &:before {
-        content: url('../../../app/media/images/user.svg');
+        content: url('../../../../public/media/images/user.svg');
       }
     }
 
     .duration {
       &:before {
-        content: url('../../../app/media/images/clock.svg');
+        content: url('../../../../public/media/images/clock.svg');
       }
     }
 
     .exactTime {
       &:before {
-        content: url('../../../app/media/images/clock.svg');
+        content: url('../../../../public/media/images/clock.svg');
       }
     }
   }
@@ -336,6 +331,4 @@
 
 // level
 
-
 //webinars
-

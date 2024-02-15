@@ -11,10 +11,11 @@
   width: 100%;
   height: 788px;
 
-  background: center / cover no-repeat url('../../app/media/images/about/about-bg-top-mobile.png');
+  background: center / cover no-repeat
+    url('../../../public/media/images/about/about-bg-top-mobile.png');
 
   @include media-breakpoint-up(sm) {
-    background: url('../../app/media/images/about/about-bg-top.png');
+    background: url('../../../public/media/images/about/about-bg-top.png');
   }
 
   @include media-breakpoint-up(lg) {
@@ -598,7 +599,7 @@
 
   border-bottom: $border-gold;
 
-  background-image: url('../../app/media/images/about/about-bg-bottom-mobile.png');
+  background-image: url('../../../public/media/images/about/about-bg-bottom-mobile.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;

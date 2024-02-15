@@ -7,13 +7,13 @@ import Link from 'next/link';
 import './aboutCompany.scss';
 
 //asset
-import aboutBgMiddle from '../../app/media/images/about/keyboar.png';
-import aboutBgMiddleMobile from '../../app/media/images/about/about-bg-middle-mobile.png';
-import aboutBgMiddleLines from '../../app/media/images/about/about-bg-middle-lines.png';
-import aboutBgMiddleLinesMobile from '../../app/media/images/about/about-bg-middle-lines-mobile.png';
-import checkIcon from '../../app/media/images/check.svg';
-import icon10 from '../../app/media/images/icon/icon10.svg';
-import icon11 from '../../app/media/images/icon/icon11.svg';
+import aboutBgMiddle from '../../../public/media/images/about/keyboar.png';
+import aboutBgMiddleMobile from '../../../public/media/images/about/about-bg-middle-mobile.png';
+import aboutBgMiddleLines from '../../../public/media/images/about/about-bg-middle-lines.png';
+import aboutBgMiddleLinesMobile from '../../../public/media/images/about/about-bg-middle-lines-mobile.png';
+import checkIcon from '../../../public/media/images/check.svg';
+import icon10 from '../../../public/media/images/icon/icon10.svg';
+import icon11 from '../../../public/media/images/icon/icon11.svg';
 import { useTranslation } from 'react-i18next';
 
 const AboutCompany = () => {

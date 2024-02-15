@@ -16,19 +16,19 @@ import Link from 'next/link';
 import { removeUserData } from '@/helpers/userData';
 
 // assets
-import icon5 from '../../app/media/images/icon/icon5.svg';
-import icon6 from '../../app/media/images/icon/icon6.svg';
-import icon7 from '../../app/media/images/icon/icon7.svg';
-import icon8 from '../../app/media/images/icon/icon8.svg';
-import icon12 from '../../app/media/images/icon/icon12.svg';
-import icon13 from '../../app/media/images/icon/icon13.svg';
-import icon14 from '../../app/media/images/icon/icon14.svg';
-import userImg from '../../app/media/images/userGolden.svg';
-import basket from '../../app/media/images/basket.svg';
+import icon5 from '../../../public/media/images/icon/icon5.svg';
+import icon6 from '../../../public/media/images/icon/icon6.svg';
+import icon7 from '../../../public/media/images/icon/icon7.svg';
+import icon8 from '../../../public/media/images/icon/icon8.svg';
+import icon12 from '../../../public/media/images/icon/icon12.svg';
+import icon13 from '../../../public/media/images/icon/icon13.svg';
+import icon14 from '../../../public/media/images/icon/icon14.svg';
+import userImg from '../../../public/media/images/userGolden.svg';
+import basket from '../../../public/media/images/basket.svg';
 
 // styles
 import './header.scss';
-import Logo from '@/app/media/images/logo';
+import Logo from '../../../public/media/images/logo';
 import { changeFeedbackLanguage } from '@/features/feedback/feedbackSlice';
 
 const Header = ({ type }) => {

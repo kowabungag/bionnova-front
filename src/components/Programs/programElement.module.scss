@@ -1,116 +1,114 @@
-.column{
-  background: #1D1D1D;
+.column {
+  background: #1d1d1d;
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 25px 35px 30px 35px;
-  &:hover{
-    outline: 2px solid #F1B434;
+  &:hover {
+    outline: 2px solid #f1b434;
   }
 
-  span{
-    color: rgba(241, 240, 231, 0.40);
+  span {
+    color: rgba(241, 240, 231, 0.4);
     font-size: 20px;
     font-weight: 300;
     line-height: 130%;
     text-transform: capitalize;
   }
-  .section{
-    color: rgba(241, 240, 231, 0.40);
+  .section {
+    color: rgba(241, 240, 231, 0.4);
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 130%; /* 31.2px */
     text-transform: capitalize;
   }
-  .name{
+  .name {
     padding-top: 18px;
     font-size: 32px;
     text-transform: uppercase;
   }
-  .title{
+  .title {
     padding-top: 18px;
-    color: #F1F0E7;
+    color: #f1f0e7;
     font-size: 32px;
     font-style: normal;
     font-weight: 300;
     line-height: 130%; /* 41.6px */
     text-transform: uppercase;
   }
-  .date{
-    padding:  16px 0 0 12px;
-    color: #F1F0E7;
+  .date {
+    padding: 16px 0 0 12px;
+    color: #f1f0e7;
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 130%; /* 41.6px */
     text-transform: uppercase;
-    &:before{
-      content: url("../../app/media/images/calendar.svg");
+    &:before {
+      content: url('../../../public/media/images/calendar.svg');
       position: relative;
       top: 4.5px;
       left: -12px;
     }
   }
-  .bottom{
+  .bottom {
     padding-top: 8px;
     display: flex;
     justify-content: space-between;
-    p{
-      padding:  0 0 0 12px;
-      color: #F1F0E7;
+    p {
+      padding: 0 0 0 12px;
+      color: #f1f0e7;
       font-size: 24px;
       font-style: normal;
       font-weight: 300;
       line-height: 130%; /* 41.6px */
       text-transform: uppercase;
-      &:before{
-        content: url("../../app/media/images/youtube.svg");
+      &:before {
+        content: url('../../../public/media/images/youtube.svg');
         position: relative;
         top: 4.5px;
         left: -12px;
       }
     }
-    img{
-
+    img {
     }
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     padding: 18px 25px 17px 17px;
-    .section{
+    .section {
       font-size: 20px;
     }
-    .name{
+    .name {
       padding-top: 16px;
       font-size: 24px;
     }
-    .title{
+    .title {
       padding-top: 16px;
       font-size: 24px;
     }
-    .date{
+    .date {
       padding-top: 16px;
       font-size: 20px;
-      &:before{
-        content: url("../../app/media/images/calendar.svg");
+      &:before {
+        content: url('../../../public/media/images/calendar.svg');
         position: relative;
         top: 4.5px;
         left: -12px;
       }
     }
-    .bottom{
+    .bottom {
       padding: 0;
-      p{
+      p {
         font-size: 20px;
-        &:before{
-          content: url("../../app/media/images/youtube.svg");
+        &:before {
+          content: url('../../../public/media/images/youtube.svg');
           position: relative;
           top: 4.5px;
           left: -12px;
         }
       }
-      img{
-
+      img {
       }
     }
   }

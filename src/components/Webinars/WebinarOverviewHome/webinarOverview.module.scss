@@ -26,13 +26,13 @@
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
-    color: rgba(245, 179, 53, 0.80);
+    color: rgba(245, 179, 53, 0.8);
 
     &:before {
       top: -2px;
       left: 0;
       position: absolute;
-      content: url("../../../app/media/images/backArrowGolden.svg");
+      content: url('../../../../public/media/images/backArrowGolden.svg');
       display: inline-block;
       width: 24px;
       height: 24px;
@@ -71,7 +71,7 @@
     max-width: 880px;
     margin: 10px 0 -23px 0;
     grid-area: scrollable;
-    background: #1D1D1D;
+    background: #1d1d1d;
     overflow-y: scroll;
     max-height: 585px;
     padding: 30px 16px 30px 40px;
@@ -87,23 +87,21 @@
       background-clip: padding-box;
       border-radius: 9999px;
 
-      background-color: rgba(217, 217, 217, 0.30);
-
+      background-color: rgba(217, 217, 217, 0.3);
     }
 
     &::-webkit-scrollbar-track {
       background-color: transparent;
     }
 
-
     .section {
       grid-area: section;
       padding: 0;
       font-size: 24px;
-      color: rgba(241, 240, 231, 0.40);
+      color: rgba(241, 240, 231, 0.4);
       font-style: normal;
       font-weight: 300;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 768px) {
         padding-top: 40px;
       }
     }
@@ -114,11 +112,10 @@
       padding-top: 24px;
       font-size: 32px;
       text-transform: uppercase;
-      @media screen and (max-width: 390px){
+      @media screen and (max-width: 390px) {
         font-size: 28px;
       }
     }
-
 
     .text {
       grid-area: text;
@@ -127,8 +124,7 @@
       font-size: 20px;
     }
 
-
-    .imgWrapper{
+    .imgWrapper {
       margin-top: 40px;
       max-height: 300px;
       height: 100%;
@@ -144,9 +140,7 @@
     }
 
     .description {
-
     }
-
 
     @media screen and (max-width: 1200px) {
       padding: 20px 16px 20px 20px;
@@ -159,7 +153,7 @@
       flex-direction: column;
       max-height: 100%;
 
-      .imgWrapper{
+      .imgWrapper {
         order: 4;
         height: 340px;
         overflow: hidden;
@@ -178,13 +172,9 @@
         order: 3;
       }
 
-
       .text {
         order: 5;
       }
-
-
-
 
       .description {
         order: 6;
@@ -197,7 +187,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 
     .contentLectures {
       display: flex;
@@ -225,28 +214,25 @@
         }
       }
 
-
       .youtube {
         &:before {
-          content: url("../../../app/media/images/youtube.svg");
-
+          content: url('../../../../public/media/images/youtube.svg');
         }
       }
 
       .synopsis {
         &:before {
-          content: url("../../../app/media/images/sinopsis.svg");
+          content: url('../../../../public/media/images/sinopsis.svg');
         }
       }
 
       .presentation {
         &:before {
-          content: url("../../../app/media/images/presentation.svg");
+          content: url('../../../../public/media/images/presentation.svg');
         }
       }
 
       @media screen and (max-width: 900px) {
-
         p {
           width: 320px;
           padding-left: 40px;
@@ -289,12 +275,11 @@
       }
     }
 
-
     .contentBuy {
       .price {
         margin: 0 0 35px;
         text-align: center;
-        color: #F5B335;
+        color: #f5b335;
         font-size: 32px;
         font-style: normal;
         font-weight: 400;
@@ -323,7 +308,7 @@
     text-transform: uppercase;
 
     &:before {
-      content: url("../../../app/media/images/calendar.svg");
+      content: url('../../../../public/media/images/calendar.svg');
       position: relative;
       top: 4.5px;
       left: -12px;
@@ -342,7 +327,7 @@
     position: relative;
 
     &:before {
-      content: url("../../../app/media/images/user.svg");
+      content: url('../../../../public/media/images/user.svg');
       position: absolute;
       top: 50%;
       left: -12px;
@@ -354,13 +339,13 @@
   }
 
   .program {
-    color: #F1F0E7;
+    color: #f1f0e7;
     padding: 24px 0 0 12px;
     font-size: 24px;
     font-weight: 300;
     line-height: 130%; /* 31.2px */
     &:before {
-      content: url("../../../app/media/images/book.svg");
+      content: url('../../../../public/media/images/book.svg');
       position: relative;
       top: 4.5px;
       left: -12px;
@@ -377,7 +362,7 @@
     font-size: 20px;
 
     &:before {
-      content: url("../../../app/media/images/clock.svg");
+      content: url('../../../../public/media/images/clock.svg');
       position: relative;
       top: 4.5px;
       left: -12px;
@@ -406,7 +391,4 @@
     max-height: 100%;
     overflow: auto;
   }
-
 }
-
-

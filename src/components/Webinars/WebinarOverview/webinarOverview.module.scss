@@ -124,7 +124,7 @@
       font-weight: 300;
 
       &:before {
-        content: url('../../../app/media/images/calendar.svg');
+        content: url('../../../../public/media/images/calendar.svg');
       }
     }
 
@@ -133,32 +133,32 @@
       max-width: 310px;
 
       &:before {
-        content: url('../../../app/media/images/user.svg');
+        content: url('../../../../public/media/images/user.svg');
       }
     }
 
     .program {
       &:before {
-        content: url('../../../app/media/images/book.svg');
+        content: url('../../../../public/media/images/book.svg');
       }
     }
 
     .format {
       &:before {
-        content: url('../../../app/media/images/clock.svg');
+        content: url('../../../../public/media/images/clock.svg');
       }
     }
 
     .exactTime {
       &:before {
-        content: url('../../../app/media/images/clock.svg');
+        content: url('../../../../public/media/images/clock.svg');
       }
     }
 
     .level {
       padding: 0 0 0 20px;
       &:before {
-        content: url('../../../app/media/images/star.svg');
+        content: url('../../../../public/media/images/star.svg');
       }
     }
 
@@ -347,7 +347,7 @@
 
 .descriptionBlock {
   padding: 180px 0 210px;
-  background-image: url('../../../app/media/images/webinarBg.png');
+  background-image: url('../../../../public/media/images/webinarBg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -120px 275px;
@@ -400,7 +400,7 @@
   }
   @media screen and (max-width: 768px) {
     padding: 64px 0 160px;
-    background-image: url('../../../app/media/images/webinarBgMedium.png');
+    background-image: url('../../../../public/media/images/webinarBgMedium.png');
     background-position: 0 105%;
     background-size: contain;
     .title {
@@ -418,6 +418,6 @@
     }
   }
   @media screen and (max-width: 450px) {
-    background-image: url('../../../app/media/images/webinarBgSmall.png');
+    background-image: url('../../../../public/media/images/webinarBgSmall.png');
   }
 }

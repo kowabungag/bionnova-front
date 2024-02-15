@@ -1,7 +1,7 @@
 .root {
   .wrapper {
     padding: 44px 23px 0;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
       padding: 21px 0;
     }
   }
@@ -14,19 +14,18 @@
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
-    color: rgba(245, 179, 53, 0.80);
+    color: rgba(245, 179, 53, 0.8);
 
     &:before {
       top: -2px;
       left: 0;
       position: absolute;
-      content: url("../../../app/media/images/backArrowGolden.svg");
+      content: url('../../../../public/media/images/backArrowGolden.svg');
       display: inline-block;
       width: 24px;
       height: 24px;
     }
   }
-
 
   .row {
     padding-top: 42px;
@@ -53,7 +52,6 @@
     }
   }
 
-
   .program {
     max-height: 506px;
     display: flex;
@@ -62,11 +60,9 @@
     @media screen and (max-width: 1024px) {
       order: 3;
     }
-
   }
 
   .programTop {
-
   }
 
   .programBottom {
@@ -78,23 +74,25 @@
     }
   }
 
-
-  .date, .webinarCount, .section {
+  .date,
+  .webinarCount,
+  .section {
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 130%; /* 31.2px */
     text-transform: capitalize;
     span {
-      color: rgba(241, 240, 231, 0.40);
+      color: rgba(241, 240, 231, 0.4);
     }
   }
 
-  .section{
-    color: rgba(241, 240, 231, 0.40);
+  .section {
+    color: rgba(241, 240, 231, 0.4);
   }
 
-  .date, .webinarCount {
+  .date,
+  .webinarCount {
     position: relative;
     padding-left: 36px;
 
@@ -107,20 +105,20 @@
 
   .date {
     &:before {
-      content: url("../../../app/media/images/calendar.svg");
+      content: url('../../../../public/media/images/calendar.svg');
     }
   }
 
   .webinarCount {
     margin-top: 8px;
     &:before {
-      content: url("../../../app/media/images/youtube.svg");
+      content: url('../../../../public/media/images/youtube.svg');
     }
   }
 
   .name {
     padding: 18px 0 16px;
-    color: #F1F0E7;
+    color: #f1f0e7;
     font-size: 32px;
     font-weight: 300;
     line-height: 130%;
@@ -156,4 +154,3 @@
     }
   }
 }
-

@@ -1,6 +1,6 @@
 import * as styles from '../programElement.module.scss';
 
-import arrowUpRight from '../../../app/media/images/arrowUpRightSm.svg';
+import arrowUpRight from '../../../../public/media/images/arrowUpRightSm.svg';
 
 import Image from 'next/image';
 import Link from 'next/link';

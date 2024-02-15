@@ -7,7 +7,6 @@
 @import './base/helpers';
 @import './base/utilities';
 
-
 @mixin vars {
   // Color variables
   @each $name, $color in $colors {
@@ -32,7 +31,6 @@ body {
   min-height: 100vh; /* Это важно: делает высоту body равной высоте видимого окна браузера */
   display: flex;
   flex-direction: column;
-
   font-family: $font-family-inter;
   font-size: 16px;
 

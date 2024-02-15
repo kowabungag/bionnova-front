@@ -1,46 +1,46 @@
-.ant-select{
-  width: 75px!important;
-  span{
+.ant-select {
+  width: 75px !important;
+  span {
     font-size: 20px;
     color: var(--color-white);
     text-transform: uppercase !important;
   }
-  @media screen and (max-width: 991px){
+  @media screen and (max-width: 991px) {
     display: none;
   }
 }
-.ant-select-selector{
+.ant-select-selector {
   position: relative;
-  background: none!important;
-  border: none!important;
+  background: none !important;
+  border: none !important;
   width: 55px;
-  &::after{
-    content: ''!important;
-    position: absolute!important;
-    top: 0!important;
-    right: 0!important;
-    width: 24px!important;
+  &::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 24px !important;
     height: 24px;
-    display: inline-block!important;
-    background-image: url("../../app/media/images/icon/icon9.svg")!important;
+    display: inline-block !important;
+    background-image: url('../../../public/media/images/icon/icon9.svg') !important;
   }
 }
 
-.ant-select-arrow{
-  svg{
-    fill:var(--color-golden-yellow)!important;
+.ant-select-arrow {
+  svg {
+    fill: var(--color-golden-yellow) !important;
   }
 }
 
-.ant-select-open{
-  span{
-    color: var(--color-white)!important;
+.ant-select-open {
+  span {
+    color: var(--color-white) !important;
     text-transform: uppercase;
   }
 }
 
-.rc-virtual-list-holder-inner{
-  text-transform: uppercase!important;
+.rc-virtual-list-holder-inner {
+  text-transform: uppercase !important;
 }
 
 //.ant-select-arrow{
@@ -58,23 +58,20 @@
   }
 }
 
-header{
-  @media screen and (max-width:991px){
-    padding: 25px 0!important;
+header {
+  @media screen and (max-width: 991px) {
+    padding: 25px 0 !important;
   }
 }
 
 .basket {
   &:before {
-    content: url("../../app/media/images/basket.svg");
+    content: url('../../../public/media/images/basket.svg');
   }
 }
 
 .account {
   &:before {
-    content: url("../../app/media/images/userGolden.svg");
+    content: url('../../../public/media/images/userGolden.svg');
   }
 }
-
-
-

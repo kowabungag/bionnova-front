@@ -3,11 +3,7 @@
 import Basket from '@/components/Basket/Basket';
 
 const BasketPage = () => {
-  return (
-    <div>
-      <Basket />
-    </div>
-  );
+  return <Basket />;
 };
 
 export default BasketPage;

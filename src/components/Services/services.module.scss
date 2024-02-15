@@ -1,12 +1,11 @@
 .root {
   box-sizing: border-box;
-  background-image: url("../../app/media/images/services/bg.svg");
+  background-image: url('../../../public/media/images/services/bg.svg');
   background-repeat: no-repeat;
   overflow: hidden;
   background-size: contain;
   @media screen and (max-width: 1500px) {
     background-size: unset;
-
   }
   @media screen and (max-width: 768px) {
     background-position: -611px 0px;
@@ -20,7 +19,11 @@
     content: '';
     display: block;
     position: absolute;
-    background: radial-gradient(circle at 12% 38%, rgba(255, 230, 114, 0.1) 5%, rgba(255, 230, 114, 0) 21%);
+    background: radial-gradient(
+      circle at 12% 38%,
+      rgba(255, 230, 114, 0.1) 5%,
+      rgba(255, 230, 114, 0) 21%
+    );
     @media screen and (max-width: 768px) {
       background: unset;
     }
@@ -42,7 +45,7 @@
 
   .title {
     flex: 1 1 50%;
-    color: #F1F0E7;
+    color: #f1f0e7;
     font-size: 70px;
     font-style: normal;
     font-weight: 600;
@@ -80,11 +83,10 @@
     background-color: #151515;
 
     &:hover {
-      outline: solid #F1B434 2px;
+      outline: solid #f1b434 2px;
     }
 
     .logo {
-
     }
 
     .description {
@@ -98,7 +100,6 @@
     }
 
     .arrow {
-
     }
 
     @media screen and (max-width: 1300px) {
@@ -150,12 +151,11 @@
   }
 }
 
-
 .addition {
   position: relative; /* Add relative positioning to the container */
 
   p {
-    color: #F1F0E7;
+    color: #f1f0e7;
   }
 
   .additionTitle {
@@ -165,7 +165,7 @@
     line-height: 130%;
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 1px;
@@ -176,7 +176,7 @@
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0px;
@@ -200,12 +200,11 @@
     position: relative;
     padding: 110px 0 90px;
     display: grid;
-    grid-template-columns:  550px  1fr;
-    grid-template-areas:
-            'title content';
+    grid-template-columns: 550px 1fr;
+    grid-template-areas: 'title content';
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 1px;
@@ -216,7 +215,7 @@
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0px;
@@ -226,7 +225,7 @@
       box-shadow: -20vw 0 0 #202020;
     }
 
-    a{
+    a {
       position: relative;
       height: fit-content;
       z-index: 10;
@@ -239,8 +238,7 @@
       padding: 85px 0 55px;
       grid-template-columns: 1fr;
 
-      grid-template-areas:
-            'title''content';
+      grid-template-areas: 'title' 'content';
     }
     @media screen and (max-width: 768px) {
       padding: 65px 0 55px;
@@ -263,11 +261,10 @@
     }
   }
 
-
   .contentTitle {
     cursor: pointer;
     max-width: 600px;
-    color: #F1B434;
+    color: #f1b434;
     font-size: 48px;
     font-weight: 400;
     line-height: 110%;
@@ -291,14 +288,14 @@
   }
 
   .contentElement {
-    border-bottom: 2px #F1B434 solid;
+    border-bottom: 2px #f1b434 solid;
   }
 
   .contentText {
     max-width: 700px;
     margin: 44px 0;
     padding: 0 0 0 60px;
-    color: #F1F0E7;
+    color: #f1f0e7;
     position: relative;
     font-size: 24px;
     font-weight: 400;
@@ -306,7 +303,7 @@
 
     &:before {
       content: '';
-      background-image: url("../../app/media/images/icon/check.svg");
+      background-image: url('../../../public/media/images/icon/check.svg');
       background-repeat: no-repeat;
       background-size: contain;
       width: 47px;
@@ -336,5 +333,3 @@
     }
   }
 }
-
-

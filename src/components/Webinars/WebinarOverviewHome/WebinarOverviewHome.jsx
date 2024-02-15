@@ -3,7 +3,6 @@ import React from 'react';
 import * as styles from './webinarOverview.module.scss';
 import WebinarDescription from '../WebinarDescription/WebinarDescription';
 
-import mockImg from '../../../app/media/images/home/webinarMock.png';
 import MyButton from '../../UI/MyButton/MyButton';
 
 import Image from 'next/image';

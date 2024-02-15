@@ -1,5 +1,4 @@
 'use client';
-import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 // styles
@@ -7,10 +6,8 @@ import Image from 'next/image';
 import * as styles from './aboutUsHome.module.scss';
 
 // assets
-import comma from '../../app//media/images/comma.svg';
+import comma from '../../../public/media/images/comma.svg';
 import { useTranslation } from 'react-i18next';
-import useHomeLayoutContext from '@/hooks/useHomeLayoutContext';
-import { strapiApi } from '@/api';
 import { useSelector } from 'react-redux';
 import MyCalendar from '@/components/MyCalendar/MyCalendar';
 

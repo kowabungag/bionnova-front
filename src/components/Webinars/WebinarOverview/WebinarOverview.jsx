@@ -8,7 +8,6 @@ import * as styles from './webinarOverview.module.scss';
 
 import MyButton from '../../UI/MyButton/MyButton';
 
-import logo from '../../../app/media/images/webinar/logo.png';
 import IndividualForm from '../../UI/IndividualForm/IndividualForm';
 import WebinarDescription from '../WebinarDescription/WebinarDescription';
 import Image from 'next/image';
@@ -122,11 +121,11 @@ export const WebinarOverview = ({ webinars }) => {
             </div>
             <div className={styles.participants}>
               <p className={styles.l1}>{t('additional.oneParticipant')}</p>
-              <p className={styles.r1}>500 ₴</p>
+              <p className={styles.r1}>-</p>
               <p className={styles.l2}>{t('additional.fewParticipant')}</p>
-              <p className={styles.r2}>3000 ₴</p>
+              <p className={styles.r2}>{t('additional.fiveDiscount')}</p>
               <p className={styles.l3}>{t('additional.manyParticipant')}</p>
-              <p className={styles.r3}>8000 ₴</p>
+              <p className={styles.r3}>{t('additional.tenDiscount')}</p>
             </div>
           </div>
         </div>
@@ -143,12 +142,12 @@ export const WebinarOverview = ({ webinars }) => {
               />
             </div>
           </div>
-          <div className={`${styles.row} ${styles.rowProgram}`}>
+          {/* <div className={`${styles.row} ${styles.rowProgram}`}>
             <p className={`${styles.title} text60`}>{t('services.program')}</p>
             <div className={styles.content}>
               <WebinarDescription type="program" programDescription={webinar.descriptionProgram} />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

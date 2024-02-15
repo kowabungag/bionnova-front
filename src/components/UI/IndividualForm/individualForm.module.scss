@@ -1,15 +1,16 @@
 .root {
   overflow: hidden;
-  background: var(--color-white) linear-gradient(90deg, rgba(241, 240, 231, 1) 66%, rgba(255, 230, 114, 0.4767156862745098) 94%);
+  background: var(--color-white)
+    linear-gradient(90deg, rgba(241, 240, 231, 1) 66%, rgba(255, 230, 114, 0.4767156862745098) 94%);
   position: relative;
 
   &::after {
-    content: url("../../../app/media/images/individualForm/bg.png");
+    content: url('../../../../public/media/images/individualForm/bg.png');
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
       display: none;
     }
   }
@@ -29,17 +30,14 @@
     line-height: 110%; /* 66px */
   }
 
-
   .row {
     padding-top: 70px;
     display: grid;
     grid-template-columns: minmax(auto, 650px) 1fr;
     column-gap: 60px;
-
   }
 
   .column {
-
   }
 
   .text {
@@ -75,7 +73,6 @@
     }
   }
   @media screen and (max-width: 768px) {
-
     background: var(--color-white);
     &::after {
       display: none;
