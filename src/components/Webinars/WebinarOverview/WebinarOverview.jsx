@@ -135,7 +135,7 @@ export const WebinarOverview = ({ webinars }) => {
           <div className={styles.row}>
             <p className={`${styles.title} text60`}>{t('services.description')}</p>
             <div className={styles.content}>
-              <p className={styles.contentTitle}>{webinar.descriptionTitle}</p>
+              <div className={styles.contentTitle}>{webinar.descriptionTitle}</div>
               <WebinarDescription
                 programTitle={webinar.descriptionSubtitle}
                 webinarDescription={webinar.descriptionWebinar}
