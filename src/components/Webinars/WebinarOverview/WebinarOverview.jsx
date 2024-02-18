@@ -7,6 +7,7 @@ import Container from '../../Container/Container';
 import * as styles from './webinarOverview.module.scss';
 
 import MyButton from '../../UI/MyButton/MyButton';
+import Markdown from 'react-markdown';
 
 import IndividualForm from '../../UI/IndividualForm/IndividualForm';
 import WebinarDescription from '../WebinarDescription/WebinarDescription';
@@ -56,6 +57,7 @@ export const WebinarOverview = ({ webinars }) => {
     };
     dispatch(addBasketElement(payload));
   };
+
   return (
     <div>
       <Container sizeZero>
@@ -135,7 +137,7 @@ export const WebinarOverview = ({ webinars }) => {
           <div className={styles.row}>
             <p className={`${styles.title} text60`}>{t('services.description')}</p>
             <div className={styles.content}>
-              <div className={styles.contentTitle}>{webinar.descriptionTitle}</div>
+              <Markdown className={styles.contentTitle}>{webinar.descriptionTitle}</Markdown>
               <WebinarDescription
                 programTitle={webinar.descriptionSubtitle}
                 webinarDescription={webinar.descriptionWebinar}

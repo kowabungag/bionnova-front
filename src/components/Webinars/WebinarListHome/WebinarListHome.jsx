@@ -1,12 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { getAllEventsWithSort, getNearestEventsByKey } from '@/helpers/getNearestEventsByKey';
-
 import * as styles from '../webinars.module.scss';
 import { convertDateFormat } from '@/helpers/convertTime';
-import { checkLanguage } from '@/helpers/checkLanguage';
-import MyLoader from '@/components/UI/MyLoader/MyLoader';
+
 import Link from 'next/link';
 
 const WebinarListHome = ({ webinars, isWebinarHome, programId, isAvailable, withAttributes }) => {

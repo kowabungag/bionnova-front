@@ -1,4 +1,5 @@
 import React from 'react';
+import Markdown from 'react-markdown';
 
 import * as styles from './webinarOverview.module.scss';
 import WebinarDescription from '../WebinarDescription/WebinarDescription';
@@ -69,7 +70,7 @@ const WebinarOverviewHome = ({
               <p className={styles.time}>{webinar.exactTime}</p>
             </div>
 
-            <p className={styles.text}>{webinar.descriptionTitle}</p>
+            <Markdown className={styles.text}>{webinar.descriptionTitle}</Markdown>
             <div className={styles.imgWrapper}>
               <Image
                 priority
