@@ -1,4 +1,4 @@
-'use client';
+import { useEffect } from 'react';
 import Image from 'next/image';
 
 // styles
@@ -8,17 +8,17 @@ import * as styles from './aboutUsHome.module.scss';
 // assets
 import comma from '../../../public/media/images/comma.svg';
 import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
-import MyCalendar from '@/components/MyCalendar/MyCalendar';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchFeedback } from '@/features/feedback/feedbackSlice';
 
 const AboutUsHome = () => {
   const { t } = useTranslation();
-  const { feedbackByLanguage, isLoading, error } = useSelector((state) => state.feedback);
+  const { feedbackByLanguage } = useSelector((state) => state.feedback);
+  const dispatch = useDispatch();
 
-  // console.log('FF',feedbackByLanguage)
-  if (isLoading) {
-    return <MyCalendar />;
-  }
+  useEffect(() => {
+    dispatch(fetchFeedback());
+  }, [dispatch]);
 
   return (
     <section className={styles.root}>

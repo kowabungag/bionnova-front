@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import MyLoader from '@/components/UI/MyLoader/MyLoader';
 import { usePreviousRoute } from '@/hooks/usePreviousRoute';
-import { useSelector, shallowEqual } from 'react-redux';
+import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import { getNearestEventsByKey, sortProgramWebinars } from '@/helpers/getNearestEventsByKey';
 import { checkLanguage } from '@/helpers/checkLanguage';
 import { createProgramElement } from '@/helpers/createProgramElement';
@@ -23,7 +23,6 @@ const useHomeLayoutContext = () => {
   useEffect(() => {
     const currenHash = location.hash.substring(1);
     setHash(currenHash);
-
     setWebinarSearch(+searchParams.get('webinar'));
     setProgramSearch(+searchParams.get('program'));
   }, []);

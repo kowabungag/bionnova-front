@@ -4,7 +4,6 @@ import './css/style.scss';
 import { Provider, useDispatch } from 'react-redux';
 import { store } from '@/store/store';
 import { useLayoutEffect, useState } from 'react';
-import { fetchUserCourses } from '@/features/userSlice/userSlice';
 import { fetchCourses } from '@/features/coursesSlice/coursesSlice';
 
 import '../i18n';
@@ -13,7 +12,6 @@ import { ToastContainer } from 'react-toastify';
 
 import MyLoader from '@/components/UI/MyLoader/MyLoader';
 import { useTranslation } from 'react-i18next';
-import { fetchFeedback } from '@/features/feedback/feedbackSlice';
 
 export default function RootLayout({ children }) {
   return (
@@ -40,9 +38,7 @@ const MiddleLayout = ({ children }) => {
 
   const dispatch = useDispatch();
   useLayoutEffect(() => {
-    dispatch(fetchUserCourses());
     dispatch(fetchCourses());
-    dispatch(fetchFeedback());
     setIsReady(ready);
   }, [dispatch, ready]);
 

@@ -82,6 +82,10 @@ export default function HomeLayout({ children }) {
   };
 
   useEffect(() => {
+    dispatch(fetchUserCourses());
+  }, [dispatch]);
+
+  useEffect(() => {
     setNavs(initNavs());
   }, [hash, language]);
 
