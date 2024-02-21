@@ -91,7 +91,7 @@ export const WebinarOverview = ({ webinars }) => {
             />
             <div className={styles.description}>
               <p className={styles.title}>
-                {t('additional.webinar')} №{webinar.id}
+                {t('additional.webinar')} №{webinar.webinarNumber}
               </p>
               <p className={`${styles.name} text60`}>{webinar.name}</p>
               <p className={styles.date}>

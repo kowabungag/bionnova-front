@@ -17,7 +17,7 @@ export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
             <>
               <div>
                 <p className={styles.section}>
-                  {t('additional.webinar')} №{webinar.id}
+                  {t('additional.webinar')} №{webinar.webinarNumber}
                 </p>
                 <p className={styles.name}>{webinar.attributes.name}</p>
                 <p className={styles.date}> {convertDateFormat(webinar.attributes.date)}</p>
@@ -45,7 +45,7 @@ export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
             <>
               <div>
                 <p className={styles.section}>
-                  {t('additional.webinar')} №{webinar.id}
+                  {t('additional.webinar')} №{webinar.webinarNumber}
                 </p>
                 <p className={styles.name}>{webinar.name}</p>
                 <p className={styles.date}> {convertDateFormat(webinar.date)}</p>
