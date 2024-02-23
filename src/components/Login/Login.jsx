@@ -33,7 +33,7 @@ const Login = () => {
 
   const handleLogin = async (event, values) => {
     event.preventDefault();
-    const url = `${process.env.STRAPI_BACKEND}api/auth/local`;
+    const url = `${process.env.NEXT_PUBLIC_STRAPI_BACKEND}api/auth/local`;
     try {
       if (values.identifier && values.password) {
         const { data } = await axios.post(url, values);
