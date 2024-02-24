@@ -120,10 +120,10 @@ export const WebinarOverview = ({ webinars }) => {
               <MyButton onClick={handleClick} golden>
                 {t('additional.addToBasket')}
               </MyButton>
-              {/* <WebinarDescription
+              <WebinarDescription
                 programTitle={webinar.descriptionSubtitle}
                 webinarDescription={webinar.descriptionWebinar}
-              /> */}
+              />
             </div>
             <div className={styles.participants}>
               <p className={styles.l1}>{t('additional.oneParticipant')}</p>
@@ -142,10 +142,6 @@ export const WebinarOverview = ({ webinars }) => {
             <p className={`${styles.title} text60`}>{t('services.description')}</p>
             <div className={styles.content}>
               <Markdown className={styles.contentTitle}>{webinar.descriptionTitle}</Markdown>
-              <WebinarDescription
-                programTitle={webinar.descriptionSubtitle}
-                webinarDescription={webinar.descriptionWebinar}
-              />
             </div>
           </div>
           {/* <div className={`${styles.row} ${styles.rowProgram}`}>

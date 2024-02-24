@@ -241,9 +241,9 @@
   }
 
   .btnBlock {
-    max-width: 380px;
+    max-width: 385px;
     grid-area: button;
-    white-space: nowrap;
+    // white-space: nowrap;
     margin: 50px 0 0 55px;
     @media screen and (max-width: 1500px) {
       margin: 50px 0 0 0;
@@ -334,12 +334,12 @@
       justify-self: center;
     }
     @media screen and (max-width: 450px) {
-      max-width: 450px;
+      max-width: 315px;
       width: 100%;
       p {
         padding: 18px 10px;
-        height: 60px;
         font-size: 20px;
+        white-space: wrap;
       }
     }
   }
