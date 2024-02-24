@@ -32,10 +32,10 @@ const Event = (props) => {
         <p className={'event_name'}>{name}</p>
         <p className="event_type text_darken">{t('additional.webinar')}</p>
         <div className="event_time">
-          <Image src={Clock} alt="Clock" />
-          <p>
+          {/* <Image src={Clock} alt="Clock" /> */}
+          {/* <p>
             {duration} {t('additional.minutes')}
-          </p>
+          </p> */}
           <Image className="arrow" src={ArrowUpRight} alt={'arrow'} />
         </div>
       </div>

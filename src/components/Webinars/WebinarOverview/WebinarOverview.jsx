@@ -120,6 +120,10 @@ export const WebinarOverview = ({ webinars }) => {
               <MyButton onClick={handleClick} golden>
                 {t('additional.addToBasket')}
               </MyButton>
+              {/* <WebinarDescription
+                programTitle={webinar.descriptionSubtitle}
+                webinarDescription={webinar.descriptionWebinar}
+              /> */}
             </div>
             <div className={styles.participants}>
               <p className={styles.l1}>{t('additional.oneParticipant')}</p>

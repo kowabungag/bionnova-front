@@ -110,12 +110,12 @@
     }
 
     .name {
-      font-size: 60px;
       margin: 0 0 0 -20px;
       padding: 16px 0 40px;
       font-weight: 600;
       line-height: 110%; /* 66px */
       max-width: 520px;
+      font-size: 3.125rem;
     }
 
     .date {
@@ -273,9 +273,9 @@
   }
 
   .participants {
-    position: relative;
-    left: -70px;
-    top: 15px;
+    // position: relative;
+    // left: -70px;
+    // top: 15px;
     align-self: center;
     max-width: 427px;
     max-height: 235px;
@@ -318,7 +318,7 @@
     }
 
     @media screen and (max-width: 1500px) {
-      max-width: 370px;
+      // max-width: 370px;
       margin-top: 40px;
       position: unset;
     }
