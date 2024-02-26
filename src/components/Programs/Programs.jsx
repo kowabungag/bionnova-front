@@ -20,8 +20,6 @@ const Programs = ({ id }) => {
   //   return <MyLoader />;
   // }
 
-  console.log(programs);
-
   return (
     <div>
       {id ? <ProgramOverview id={id} programs={programs} /> : <ProgramsList programs={programs} />}
