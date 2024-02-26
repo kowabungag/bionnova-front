@@ -10,7 +10,7 @@ import ProgramElement from '../ProgramElement/ProgramElement';
 import * as styles from '../programs.module.scss';
 import IndividualForm from '@/components/UI/IndividualForm/IndividualForm';
 
-export const ProgramsList = ({ programs }) => {
+export const ProgramsList = () => {
   const { t } = useTranslation();
 
   return (
@@ -24,7 +24,7 @@ export const ProgramsList = ({ programs }) => {
           </div>
           <p className={styles.title}>{t('services.training')}</p>
           <div className={styles.row}>
-            <ProgramElement programs={programs} />
+            <ProgramElement />
           </div>
         </div>
       </Container>

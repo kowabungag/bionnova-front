@@ -20,11 +20,7 @@ const Programs = ({ id }) => {
   //   return <MyLoader />;
   // }
 
-  return (
-    <div>
-      {id ? <ProgramOverview id={id} programs={programs} /> : <ProgramsList programs={programs} />}
-    </div>
-  );
+  return <div>{id ? <ProgramOverview id={id} programs={programs} /> : <ProgramsList />}</div>;
 };
 
 export default Programs;

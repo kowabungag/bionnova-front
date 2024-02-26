@@ -7,14 +7,16 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { convertDateFormat } from '@/helpers/convertTime';
 import { getAllNearestEvents } from '@/helpers/getNearestEventsByKey';
+import { useSelector } from 'react-redux';
 
-const ProgramElement = ({ programs }) => {
+const ProgramElement = () => {
   const { t } = useTranslation();
   const hash = location.hash.substring(1);
+  const { globalCoursesByLanguage } = useSelector((store) => store.courses);
+  const { programs } = globalCoursesByLanguage;
   const filteredProgramsByHash = programs.filter((program) => program.topic === hash);
   const closest = getAllNearestEvents(filteredProgramsByHash, 'start');
 
-  console.log('filtered', filteredProgramsByHash);
   console.log('closest', closest);
 
   return (
