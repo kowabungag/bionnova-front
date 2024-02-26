@@ -17,15 +17,15 @@ const Activities = () => {
   const { t } = useTranslation();
   const { globalCoursesByLanguage, isLoading, error } = useSelector((state) => state.courses);
   const { webinars, programs } = globalCoursesByLanguage;
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchCourses());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchCourses());
+  // }, [dispatch]);
 
-  if (isLoading) {
-    return <MyLoader />;
-  }
+  // if (isLoading) {
+  //   return <MyLoader />;
+  // }
 
   if (error) {
     return <p>{error}</p>;
