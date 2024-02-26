@@ -11,8 +11,6 @@ export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
   const isAttributesExist = webinars[0]?.attributes;
   const sortedWebinarsByDate = getAllEventsWithSort(webinars, 'date');
 
-  console.log(isAttributesExist);
-
   return (
     <>
       {sortedWebinarsByDate.map((webinar) => (
