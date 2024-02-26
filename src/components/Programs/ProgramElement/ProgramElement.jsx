@@ -15,6 +15,7 @@ const ProgramElement = ({ programs }) => {
   const closest = getAllNearestEvents(filteredProgramsByHash, 'start');
 
   console.log('programs', programs);
+  console.log('filteredProgramsByHash', filteredProgramsByHash);
 
   return (
     <>
