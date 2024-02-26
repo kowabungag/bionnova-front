@@ -5,7 +5,7 @@ import { fetchCourses } from '@/features/coursesSlice/coursesSlice';
 
 import { ProgramOverview } from './ProgramOverview/ProgramOverview';
 import { ProgramsList } from './ProgramsList/ProgramsList';
-import MyLoader from '@/components/UI/MyLoader/MyLoader';
+// import MyLoader from '@/components/UI/MyLoader/MyLoader';
 
 const Programs = ({ id }) => {
   const { globalCoursesByLanguage, isLoading } = useSelector((store) => store.courses);
