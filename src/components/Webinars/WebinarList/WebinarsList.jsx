@@ -11,7 +11,7 @@ export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
   const isAttributesExist = webinars[0]?.attributes;
   const sortedWebinarsByDate = getAllEventsWithSort(webinars, 'date');
 
-  console.log(sortedWebinarsByDate);
+  console.log(isAttributesExist);
 
   return (
     <>
@@ -21,7 +21,7 @@ export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
             <>
               <div>
                 <p className={styles.section}>
-                  {t('additional.webinar')} №{webinar.webinarNumber}
+                  {t('additional.webinar')} №{webinar.attributes.webinarNumber}
                 </p>
                 <p className={styles.name}>{webinar.attributes.name}</p>
                 <p className={styles.date}> {convertDateFormat(webinar.attributes.date)}</p>
