@@ -1,13 +1,13 @@
-import * as styles from '../webinars.module.scss'
+import * as styles from '../webinars.module.scss';
 
-import React from 'react'
-import Link from 'next/link'
-import { useTranslation } from 'react-i18next'
-import { convertDateFormat } from '@/helpers/convertTime'
+import React from 'react';
+import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
+import { convertDateFormat } from '@/helpers/convertTime';
 
 export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
-  const { t } = useTranslation()
-  const isAttributesExist = webinars[0]?.attributes
+  const { t } = useTranslation();
+  const isAttributesExist = webinars[0]?.attributes;
 
   return (
     <>
@@ -73,5 +73,5 @@ export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
         </div>
       ))}
     </>
-  )
-}
+  );
+};
