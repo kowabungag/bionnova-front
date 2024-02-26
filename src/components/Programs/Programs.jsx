@@ -12,13 +12,13 @@ const Programs = ({ id }) => {
   const { programs } = globalCoursesByLanguage;
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (!id) dispatch(fetchCourses());
-  }, [dispatch, id]);
+  // useEffect(() => {
+  //   if (!id) dispatch(fetchCourses());
+  // }, [dispatch, id]);
 
-  if (isLoading) {
-    return <MyLoader />;
-  }
+  // if (isLoading) {
+  //   return <MyLoader />;
+  // }
 
   return (
     <div>
