@@ -11,11 +11,8 @@ import { getAllNearestEvents } from '@/helpers/getNearestEventsByKey';
 const ProgramElement = ({ programs }) => {
   const { t } = useTranslation();
   const hash = location.hash.substring(1);
-  let closest = [];
-  if (programs.length) {
-    const filteredProgramsByHash = programs.filter((program) => program.topic === hash);
-    closest = getAllNearestEvents(filteredProgramsByHash, 'start');
-  }
+  const filteredProgramsByHash = programs.filter((program) => program.topic === hash);
+  const closest = getAllNearestEvents(filteredProgramsByHash, 'start');
 
   return (
     <>
