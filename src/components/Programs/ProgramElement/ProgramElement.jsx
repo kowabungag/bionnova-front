@@ -14,11 +14,12 @@ const ProgramElement = ({ programs }) => {
   const filteredProgramsByHash = programs.filter((program) => program.topic === hash);
   const closest = getAllNearestEvents(filteredProgramsByHash, 'start');
 
-  console.log(closest);
+  console.log('filtered', filteredProgramsByHash);
+  console.log('closest', closest);
 
   return (
     <>
-      {closest.map((program) => (
+      {closest?.map((program) => (
         <div key={program.id} className={styles.column}>
           <Link href={`/services/programs/${program.id}#${hash}`}>
             <p className={styles.section}>{t('additional.program')}</p>
