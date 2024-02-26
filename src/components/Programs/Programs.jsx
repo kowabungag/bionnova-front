@@ -13,8 +13,8 @@ const Programs = ({ id }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!id) dispatch(fetchCourses());
-  }, [dispatch, id]);
+    dispatch(fetchCourses());
+  }, [dispatch]);
 
   if (isLoading) {
     return <MyLoader />;

@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { convertDateFormat } from '@/helpers/convertTime';
 import { getAllNearestEvents } from '@/helpers/getNearestEventsByKey';
+import { useEffect } from 'react';
 
 const ProgramElement = ({ programs }) => {
   const { t } = useTranslation();
