@@ -4,14 +4,16 @@ import React from 'react';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { convertDateFormat } from '@/helpers/convertTime';
+import { getAllEventsWithSort } from '@/helpers/getNearestEventsByKey';
 
 export const WebinarsList = ({ webinars, programId, hash, isWebinarHome }) => {
   const { t } = useTranslation();
   const isAttributesExist = webinars[0]?.attributes;
+  const sortedWebinarsByDate = getAllEventsWithSort(webinars, 'date');
 
   return (
     <>
-      {webinars.map((webinar) => (
+      {sortedWebinarsByDate.map((webinar) => (
         <div key={webinar.id} className={styles.column}>
           {isAttributesExist ? (
             <>
