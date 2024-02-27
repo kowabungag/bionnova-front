@@ -2,12 +2,12 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { strapiApi } from '@/api';
 import { getFeedbackByLanguage } from '@/helpers/getFeedbackByLanguage';
 
-const languageFromStorage =
-  typeof window !== 'undefined' ? localStorage.getItem('language') || 'ua' : 'ua';
+// const languageFromStorage =
+//   typeof window !== 'undefined' ? localStorage.getItem('language') || 'ua' : 'ua';
 
 export const fetchFeedback = createAsyncThunk(
   'feedback/fetchFeedback',
-  async (language = languageFromStorage) => {
+  async (language = localStorage.getItem('language') ? localStorage.getItem('language') : 'ua') => {
     const feedback = await strapiApi.get(`/api/feedbacks?populate=*`);
 
     const feedbackByLanguage = getFeedbackByLanguage(feedback.data.data, language);

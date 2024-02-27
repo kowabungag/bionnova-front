@@ -12,7 +12,7 @@ const userFromStorage = typeof window !== 'undefined' ? userData() : {};
 
 export const fetchUserCourses = createAsyncThunk(
   'courses/fetchCoursesByLanguage',
-  async (language = languageFromStorage) => {
+  async (language = localStorage.getItem('language') ? localStorage.getItem('language') : 'ua') => {
     if (!userFromStorage.userId) {
       throw new Error('User ID not available.'); // This will be caught by the 'rejected' case in the slice.
     }
