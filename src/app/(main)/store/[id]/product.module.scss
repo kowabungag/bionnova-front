@@ -1,0 +1,81 @@
+.articleWrapper {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 6rem;
+  @media screen and (max-width: 50em) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.title {
+  font-size: clamp(1.944rem, 1.771rem + 0.8651vw, 2.25rem);
+  margin-bottom: 0.5rem;
+}
+
+.author {
+  font-size: 1.5rem;
+  color: hsla(0, 0%, 85%, 1);
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.attributeWrapper {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.availability {
+  font-size: 1rem;
+  color: hsla(41, 87%, 57%, 1);
+  font-weight: 300;
+}
+
+.article {
+  font-size: 1rem;
+  color: hsl(53.3, 6%, 70.8%);
+  font-weight: 300;
+}
+
+.price {
+  font-size: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.75rem);
+  font-weight: 600;
+  color: white;
+  display: block;
+  margin-bottom: 2.2rem;
+}
+
+.btn {
+  border: 2px solid hsla(41, 87%, 57%, 1);
+  padding: 1.25rem 2.5rem;
+  color: hsla(41, 87%, 57%, 1);
+  font-size: clamp(1.4rem, 1.3rem + 0.8651vw, 2.438rem);
+  font-weight: 500;
+  margin-bottom: 3rem;
+  @media screen and (max-width: 50em) {
+    padding: 1rem 1.6rem;
+  }
+}
+
+.descriptionTitle {
+  font-size: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.875rem);
+  font-weight: 600;
+  color: hsla(54, 26%, 93%, 1);
+  margin-bottom: 1.5rem;
+}
+
+.descriptionText {
+  font-size: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5rem);
+  font-weight: 400;
+  color: hsla(0, 0%, 85%, 1);
+  margin-bottom: 2rem;
+}
+
+.link {
+  color: hsl(52.5, 3.8%, 58.4%) !important;
+  font-size: 1.125rem;
+  border-bottom: 1px solid hsl(52.5, 3.8%, 58.4%);
+}

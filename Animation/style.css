@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: cornflowerblue;
+  padding: 1rem 2rem;  
+}
+
+.main {
+  padding: 1rem;      
+}
+
+.sidebar {
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+
+  padding: 1rem;
+  width: 15rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: width .5s;
+}
+
+.sidebar-btn {    
+  color: black;
+  background-color: white;
+  border: .1rem solid #6f6e6e;
+  border-radius: 50%;
+  padding: .6rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+  top: 3rem;
+  left: 13.7rem;
+  transition: left .5s;
+}
+

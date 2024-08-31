@@ -169,6 +169,22 @@ const Header = ({ type }) => {
             </li>
             <li>
               <Link
+                className={`text-uppercase ${endpoint.includes('blog') ? 'active' : ''}`}
+                href={'/blog'}
+              >
+                {t('header.blog')}
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`text-uppercase ${endpoint.includes('store') ? 'active' : ''}`}
+                href={'/store'}
+              >
+                {t('header.store')}
+              </Link>
+            </li>
+            <li>
+              <Link
                 className={`text-uppercase ${endpoint.includes('contacts') ? 'active' : ''}`}
                 href={'/contacts'}
               >
@@ -251,6 +267,22 @@ const Header = ({ type }) => {
                 href={'/activities'}
               >
                 {t('header.events')}
+              </Link>
+            </li>
+            <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
+              <Link
+                className={`text-uppercase ${endpoint.includes('blog') ? 'active' : ''}`}
+                href={'/blog'}
+              >
+                {t('header.blog')}
+              </Link>
+            </li>
+            <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>
+              <Link
+                className={`text-uppercase ${endpoint.includes('store') ? 'active' : ''}`}
+                href={'/store'}
+              >
+                {t('header.store')}
               </Link>
             </li>
             <li className={type === 'cabinet' ? 'hidden' : ''} onClick={handleMobileClick}>

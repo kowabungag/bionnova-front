@@ -1,0 +1,77 @@
+.img {
+  margin-top: 9rem;
+  position: relative;
+  @media screen and (max-width: 40em) {
+    margin-top: 6rem;
+  }
+}
+
+.mainTitleWrapper {
+  margin-top: -17rem;
+  margin-bottom: 10rem;
+  position: relative;
+  z-index: 3;
+  @media screen and (max-width: 48.125em) {
+    display: none;
+  }
+}
+.article {
+  margin-block: 3rem 4rem;
+  max-width: 99.375rem;
+  margin-inline: auto;
+  padding-inline: 0.938rem;
+}
+
+.mainTitle {
+  font-size: clamp(2.986rem, 1.3123rem + 3.4778vw, 4.375rem);
+}
+
+.date {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.secondaryTitle {
+  font-size: clamp(1.728rem, 1.5482rem + 0.8988vw, 2.25rem);
+  color: white;
+  margin-bottom: 1rem;
+}
+.stickyTitle {
+  font-size: clamp(1.728rem, 1.5482rem + 0.8988vw, 2.25rem);
+  color: white;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 8rem;
+  @media screen and (max-width: 48.125em) {
+    position: initial;
+  }
+}
+
+.stickyDate {
+  font-size: 1.125rem;
+  color: white;
+  position: sticky;
+  top: 17rem;
+  @media screen and (max-width: 48.125em) {
+    display: inline-block;
+    margin-bottom: 1rem;
+    position: initial;
+  }
+}
+
+.articleWrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  @media screen and (max-width: 68.75em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 48.125em) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.text {
+  font-size: clamp(1.2rem, 1.1087rem + 0.4567vw, 1.5rem);
+  margin-bottom: 2rem;
+}
