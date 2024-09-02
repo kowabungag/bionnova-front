@@ -55,6 +55,13 @@
   font-size: clamp(1.4rem, 1.3rem + 0.8651vw, 2.438rem);
   font-weight: 500;
   margin-bottom: 3rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: hsla(41, 87%, 57%, 0.7);
+    border-color: hsla(41, 87%, 57%, 0.7);
+  }
+
   @media screen and (max-width: 50em) {
     padding: 1rem 1.6rem;
   }
