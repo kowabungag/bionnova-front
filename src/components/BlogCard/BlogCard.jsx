@@ -13,7 +13,7 @@ const BlogCard = ({ article }) => {
         height={412}
       />
       <span className={styles.cardTime}>{article.time}</span>
-      <Link href="#">
+      <Link href={article.id.toString()}>
         <h3 className={styles.cardTitle}>{article.title}</h3>
         <p className={styles.cardText}>{article.text}</p>
       </Link>

@@ -10,7 +10,7 @@ const StoreCard = ({ product }) => {
       </div>
       <div className={styles.bookDescription}>
         <div>
-          <Link href="#">
+          <Link href={product.id.toString()}>
             <h3 className={styles.bookTitle}>{product.title}</h3>
           </Link>
           <span className={styles.bookAuthor}>{product.author}</span>
