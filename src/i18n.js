@@ -359,19 +359,19 @@ i18n
             recentArticles: "Recent articles",
           },
           blogCard: {
-            post1: {
+            post0: {
               title: "Drug safety: How to choose a reliable manufacturer?",
-              Excerp:
+              excerp:
                 "When choosing medications, safety and reliability should come first. IN In this article we will tell you what to look for when choosing a manufacturer medications, how to check product quality and what GMP certification means.",
             },
             post1: {
               title: "Drug safety: How to choose a reliable manufacturer?",
-              Excerp:
+              excerp:
                 "When choosing medications, safety and reliability should come first. IN In this article we will tell you what to look for when choosing a manufacturer medications, how to check product quality and what GMP certification means.",
             },
-            post1: {
+            post2: {
               title: "Drug safety: How to choose a reliable manufacturer?",
-              Excerp:
+              excerp:
                 "When choosing medications, safety and reliability should come first. IN In this article we will tell you what to look for when choosing a manufacturer medications, how to check product quality and what GMP certification means.",
             },
           },
