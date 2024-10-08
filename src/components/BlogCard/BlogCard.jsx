@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const BlogCard = ({ article }) => {
+const BlogCard = ({ article, index }) => {
   const { t } = useTranslation();
   return (
     <div className={styles.card}>
@@ -17,8 +17,12 @@ const BlogCard = ({ article }) => {
       />
       <span className={styles.cardTime}>{article.time}</span>
       <Link href={article.id.toString()}>
-        <h3 className={styles.cardTitle}>{t("blogCard.post1.title")}</h3>
-        <p className={styles.cardText}>{t("blogCard.post1.excerp")}</p>
+        <h3 className={styles.cardTitle}>
+          {t("blogCard.post1.title")} {index}
+        </h3>
+        <p className={styles.cardText}>
+          {t("blogCard.post1.excerp")} {index}
+        </p>
       </Link>
       <div className={styles.cardTags}>
         {article.tags
