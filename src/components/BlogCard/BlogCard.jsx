@@ -6,24 +6,6 @@ import { useTranslation } from "react-i18next";
 
 const BlogCard = ({ article }) => {
   const { t } = useTranslation();
-  // const BlogCardContent = [
-  //   {
-  //     id: 0,
-  //     text: t("blogCard.post1.title"),
-  //     excerp: t("blogCard.post0.excerp"),
-  //   },
-  //   {
-  //     id: 1,
-  //     text: t("blogCard.post1.title"),
-  //     excerp: t("blogCard.post1.excerp"),
-  //   },
-  //   {
-  //     id: 2,
-  //     text: t("blogCard.post1.title"),
-  //     excerp: t("blogCard.post2.excerp"),
-  //   },
-  // ];
-
   return (
     <div className={styles.card}>
       <Image
@@ -36,7 +18,7 @@ const BlogCard = ({ article }) => {
       <span className={styles.cardTime}>{article.time}</span>
       <Link href={article.id.toString()}>
         <h3 className={styles.cardTitle}>{t("blogCard.post1.title")}</h3>
-        <p className={styles.cardText}>{t("blogCard.post2.excerp")}</p>
+        <p className={styles.cardText}>{t("blogCard.post1.excerp")}</p>
       </Link>
       <div className={styles.cardTags}>
         {article.tags
