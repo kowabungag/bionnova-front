@@ -2,6 +2,7 @@ import * as styles from "./blogCard.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const BlogCard = ({ article }) => {
   const { t } = useTranslation();

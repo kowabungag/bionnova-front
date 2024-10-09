@@ -49,7 +49,7 @@ const blogArticles = [
   },
 ];
 
-const BlogPage = () => {
+const BlogPage = (index) => {
   const { t } = useTranslation();
   return (
     <>
