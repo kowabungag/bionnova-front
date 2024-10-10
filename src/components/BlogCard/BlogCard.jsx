@@ -4,8 +4,9 @@ import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const BlogCard = ({ article }) => {
+const BlogCard = ({ article, index }) => {
   const { t } = useTranslation();
+  console.log(index);
   return (
     <div className={styles.card}>
       <Image
