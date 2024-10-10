@@ -364,24 +364,28 @@ i18n
               excerp:
                 "When choosing medications, safety and reliability should come first. IN In this article we will tell you what to look for when choosing a manufacturer medications, how to check product quality and what GMP certification means.",
               time: "June 7, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post1: {
               title: "2Drug safety: How to choose a reliable manufacturer?",
               excerp:
                 "When choosing medications, safety and reliability should come first. IN In this article we will tell you what to look for when choosing a manufacturer medications, how to check product quality and what GMP certification means.",
               time: "December 13, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post2: {
               title: "3Drug safety: How to choose a reliable manufacturer?",
               excerp:
                 "When choosing medications, safety and reliability should come first. IN In this article we will tell you what to look for when choosing a manufacturer medications, how to check product quality and what GMP certification means.",
               time: "July 6, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post3: {
               title: "4Drug safety: How to choose a reliable manufacturer?",
               excerp:
                 "When choosing medications, safety and reliability should come first. IN In this article we will tell you what to look for when choosing a manufacturer medications, how to check product quality and what GMP certification means.",
               time: "March 26, 2023",
+              img: "../../../media/img/card-photo.png",
             },
           },
         },
@@ -732,6 +736,7 @@ i18n
               excerp:
                 "При выборе медикаментов безопасность и надежность должны быть на первом месте. В этой статье мы расскажем, на что обращать внимание при выборе производителя лекарств, как проверять качество продукции и что означает сертификация GMP.",
               time: "7 июня, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post1: {
               title:
@@ -739,6 +744,7 @@ i18n
               excerp:
                 "При выборе медикаментов безопасность и надежность должны быть на первом месте. В этой статье мы расскажем, на что обращать внимание при выборе производителя лекарств, как проверять качество продукции и что означает сертификация GMP.",
               time: "13 декабря, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post2: {
               title:
@@ -746,6 +752,7 @@ i18n
               excerp:
                 "При выборе медикаментов безопасность и надежность должны быть на первом месте. В этой статье мы расскажем, на что обращать внимание при выборе производителя лекарств, как проверять качество продукции и что означает сертификация GMP.",
               time: "6 июля, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post3: {
               title:
@@ -753,6 +760,7 @@ i18n
               excerp:
                 "При выборе медикаментов безопасность и надежность должны быть на первом месте. В этой статье мы расскажем, на что обращать внимание при выборе производителя лекарств, как проверять качество продукции и что означает сертификация GMP.",
               time: "26 марта, 2023",
+              img: "../../../media/img/card-photo.png",
             },
           },
         },
@@ -1132,24 +1140,28 @@ i18n
               excerp:
                 "1Під час вибору медикаментів безпека та надійність мають бути на першому місці. У цій статті ми розповімо, на що звертати увагу під час вибору виробника ліків, як перевіряти якість продукції та що означає сертифікація GMP.",
               time: "7 червня, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post1: {
               title: "2Безпека ліків: Як обрати надійного виробника?",
               excerp:
                 "2Під час вибору медикаментів безпека та надійність мають бути на першому місці. У цій статті ми розповімо, на що звертати увагу під час вибору виробника ліків, як перевіряти якість продукції та що означає сертифікація GMP.",
               time: "13 грудня, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post2: {
               title: "3Безпека ліків: Як обрати надійного виробника?",
               excerp:
                 "3Під час вибору медикаментів безпека та надійність мають бути на першому місці. У цій статті ми розповімо, на що звертати увагу під час вибору виробника ліків, як перевіряти якість продукції та що означає сертифікація GMP.",
               time: "6 липня, 2024",
+              img: "../../../media/img/card-photo.png",
             },
             post3: {
               title: "3Безпека ліків: Як обрати надійного виробника?",
               excerp:
                 "4Під час вибору медикаментів безпека та надійність мають бути на першому місці. У цій статті ми розповімо, на що звертати увагу під час вибору виробника ліків, як перевіряти якість продукції та що означає сертифікація GMP.",
               time: "26 березня, 2023",
+              img: "../../../media/img/card-photo.png",
             },
           },
         },
