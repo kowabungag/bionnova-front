@@ -4,8 +4,6 @@ import * as styles from "./blog.module.scss";
 import Container from "@/components/Container/Container";
 import BlogCard from "@/components/BlogCard/BlogCard";
 
-import { useTranslation } from "react-i18next";
-
 const blogArticles = [
   {
     id: 1,
@@ -50,7 +48,6 @@ const blogArticles = [
 ];
 
 const BlogPage = (index) => {
-  const { t } = useTranslation();
   return (
     <>
       <Container sizeZero>
