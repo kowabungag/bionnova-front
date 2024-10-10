@@ -15,7 +15,9 @@ const BlogCard = ({ article, index }) => {
         width={500}
         height={412}
       />
-      <span className={styles.cardTime}>{article.time}</span>
+      <span className={styles.cardTime}>
+        {t(`blogCard.post${article.id}.time`)}
+      </span>
       <Link href={article.id.toString()}>
         <h3 className={styles.cardTitle}>
           {t(`blogCard.post${article.id}.title`)}
