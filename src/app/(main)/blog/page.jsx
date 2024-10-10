@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 const blogArticles = [
   {
-    id: 1,
+    id: 0,
     time: "7 июня, 2024",
     title: "Безопасность лекарств: Как выбрать надежного производителя?",
 
@@ -18,7 +18,7 @@ const blogArticles = [
     img: "../../../media/img/card-photo.png",
   },
   {
-    id: 2,
+    id: 1,
     time: "13 декабря, 2024",
     title: "Безопасность лекарств: Как выбрать надежного производителя?",
 
@@ -28,7 +28,7 @@ const blogArticles = [
     img: "../../../media/img/card-photo.png",
   },
   {
-    id: 3,
+    id: 2,
     time: "6 июля, 2024",
     title: "Безопасность лекарств: Как выбрать надежного производителя?",
 
@@ -38,7 +38,7 @@ const blogArticles = [
     img: "../../../media/img/card-photo.png",
   },
   {
-    id: 4,
+    id: 3,
     time: "26 марта, 2023",
     title: "Безопасность лекарств: Как выбрать надежного производителя?",
 
