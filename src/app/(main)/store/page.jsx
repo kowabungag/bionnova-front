@@ -51,7 +51,6 @@ const StorePage = () => {
           ))}
         </div>
       </Container>
-      <CardTab />
     </>
   );
 };
