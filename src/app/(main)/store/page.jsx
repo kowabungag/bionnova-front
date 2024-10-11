@@ -68,8 +68,8 @@ class App extends React.Component {
       </>
     );
   }
-  addToOrder(item) {
-    this.setState({ orders: [...this.state.orders, item] });
+  addToOrder(product) {
+    this.setState({ orders: [...this.state.orders, product] });
   }
 }
 export default App;
