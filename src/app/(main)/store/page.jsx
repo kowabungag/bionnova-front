@@ -56,14 +56,20 @@ class App extends React.Component {
         <Container sizeZero>
           <div className={styles.cardsWrapper}>
             {storeProducts.map((product) => (
-              <StoreCard key={product.id} product={product} />
+              <StoreCard
+                key={product.id}
+                product={product}
+                onAdd={this.addToOrder}
+              />
             ))}
           </div>
         </Container>
       </>
     );
   }
-  addToOrder(item) {}
+  addToOrder(item) {
+    this.setState({ orders: [...this.state.orders, item] });
+  }
 }
 export default App;
 
