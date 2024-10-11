@@ -2,7 +2,8 @@
 import * as styles from "./store.module.scss";
 import Container from "@/components/Container/Container";
 import StoreCard from "@/components/StoreCard/StoreCard";
-import CardTab from "./components/CardTab/CardTab";
+import CardTab from "@/components/CardTab/CardTab";
+
 const storeProducts = [
   {
     id: 1,

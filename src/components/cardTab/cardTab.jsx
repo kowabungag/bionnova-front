@@ -1,5 +1,6 @@
 import React from "react";
-const cardTab = () => {
+
+const CardTab = () => {
   return <div>Card</div>;
 };
-export default cardTab;
+export default CardTab;
