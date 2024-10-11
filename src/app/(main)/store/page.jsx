@@ -2,7 +2,7 @@
 import * as styles from "./store.module.scss";
 import Container from "@/components/Container/Container";
 import StoreCard from "@/components/StoreCard/StoreCard";
-import cardTab from "@/components/cardTab/cardTab";
+import CardTab from "@/components/CardTab/cardTab";
 const storeProducts = [
   {
     id: 1,
@@ -51,7 +51,7 @@ const StorePage = () => {
           ))}
         </div>
       </Container>
-      <cardTab />
+      <CardTab />
     </>
   );
 };
