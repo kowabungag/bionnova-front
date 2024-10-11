@@ -17,12 +17,7 @@ const StoreCard = ({ product }) => {
           </Link>
           <span className={styles.bookAuthor}>{product.author}</span>
         </div>
-        <button
-          className={styles.btn}
-          onClick={() => this.onAdd(this.props.product)}
-        >
-          В корзину
-        </button>
+        <button className={styles.btn}>В корзину</button>
       </div>
     </div>
   );

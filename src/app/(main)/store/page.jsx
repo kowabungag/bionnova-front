@@ -2,7 +2,6 @@
 import * as styles from "./store.module.scss";
 import Container from "@/components/Container/Container";
 import StoreCard from "@/components/StoreCard/StoreCard";
-import React from "react";
 
 const storeProducts = [
   {
@@ -41,51 +40,19 @@ const storeProducts = [
     img: "../../../media/img/book-1.png",
   },
 ];
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      orders: [],
-      items: [],
-    };
-    this.addToOrder = this.addToOrder.bind(this);
-  }
-  render() {
-    return (
-      <>
-        <Container sizeZero>
-          <div className={styles.cardsWrapper}>
-            {storeProducts.map((product) => (
-              <StoreCard
-                key={product.id}
-                product={product}
-                onAdd={this.addToOrder}
-                items={this.state.items}
-              />
-            ))}
-          </div>
-        </Container>
-      </>
-    );
-  }
-  addToOrder(product) {
-    this.setState({ orders: [...this.state.orders, product] });
-  }
-}
-export default App;
 
-// const StorePage = () => {
-//   return (
-//     <>
-//       <Container sizeZero>
-//         <div className={styles.cardsWrapper}>
-//           {storeProducts.map((product) => (
-//             <StoreCard key={product.id} product={product} />
-//           ))}
-//         </div>
-//       </Container>
-//     </>
-//   );
-// };
+const StorePage = () => {
+  return (
+    <>
+      <Container sizeZero>
+        <div className={styles.cardsWrapper}>
+          {storeProducts.map((product) => (
+            <StoreCard key={product.id} product={product} />
+          ))}
+        </div>
+      </Container>
+    </>
+  );
+};
 
-// export default StorePage;
+export default StorePage;
