@@ -60,6 +60,7 @@ class App extends React.Component {
                 key={product.id}
                 product={product}
                 onAdd={this.addToOrder}
+                items={this.state.items}
               />
             ))}
           </div>
