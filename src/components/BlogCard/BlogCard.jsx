@@ -11,7 +11,7 @@ const BlogCard = ({ article, index }) => {
       <Image
         className={styles.cardImage}
         src={article.img}
-        alt={article.title}
+        alt={t(`blogCard.post${article.id}.title`)}
         width={500}
         height={412}
       />

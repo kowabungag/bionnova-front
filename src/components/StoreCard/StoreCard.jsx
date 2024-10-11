@@ -1,8 +1,10 @@
-import * as styles from './storeCard.module.scss';
-import Image from 'next/image';
-import Link from 'next/link';
+import * as styles from "./storeCard.module.scss";
+import Image from "next/image";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const StoreCard = ({ product }) => {
+  const { t } = useTranslation();
   return (
     <div className={styles.card}>
       <div className={styles.imgBlock}>
