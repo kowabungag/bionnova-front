@@ -19,7 +19,7 @@ const StoreCard = ({ product }) => {
         </div>
         <button
           className={styles.btn}
-          onClick={() => this.props.onAdd(this.props.product.id)}
+          onClick={() => this.props.onAdd(this.props.product)}
         >
           В корзину
         </button>
